@@ -1,0 +1,72 @@
+{
+  "version": "1.1.0",
+  "diagrams": [
+    {
+      "ordinal": 0,
+      "scrollPosition": {
+        "x": 78,
+        "y": 0
+      },
+      "nodes": [
+        {
+          "location": {
+            "x": 345,
+            "y": 202.375
+          },
+          "nodeIndex": "City Metrics",
+          "size": {
+            "height": 300,
+            "width": 234
+          },
+          "zIndex": 0
+        },
+        {
+          "location": {
+            "x": 12,
+            "y": 84.375
+          },
+          "nodeIndex": "City Lookup",
+          "size": {
+            "height": 200,
+            "width": 234
+          },
+          "zIndex": 0
+        },
+        {
+          "location": {
+            "x": 889,
+            "y": 203.875
+          },
+          "nodeIndex": "*Measures",
+          "nodeLineageTag": "740efad4-2d31-4cf2-8da5-f3b84bb8b9d4",
+          "size": {
+            "height": 104,
+            "width": 234
+          },
+          "zIndex": 0
+        },
+        {
+          "location": {
+            "x": 1161,
+            "y": 161.125
+          },
+          "nodeIndex": "Parameter",
+          "nodeLineageTag": "4991c938-6a13-4f22-af71-84b595b4962a",
+          "size": {
+            "height": 152,
+            "width": 234
+          },
+          "zIndex": 0
+        }
+      ],
+      "name": "All tables",
+      "zoomValue": 100,
+      "pinKeyFieldsToTop": false,
+      "showExtraHeaderInfo": false,
+      "hideKeyFieldsWhenCollapsed": false,
+      "tablesLocked": false
+    }
+  ],
+  "selectedDiagram": "All tables",
+  "defaultDiagram": "All tables"
+}

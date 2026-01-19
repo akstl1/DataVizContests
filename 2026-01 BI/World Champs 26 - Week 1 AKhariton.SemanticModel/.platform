@@ -1,0 +1,11 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/fabric/gitIntegration/platformProperties/2.0.0/schema.json",
+  "metadata": {
+    "type": "SemanticModel",
+    "displayName": "World Champs 26 - Week 1 AKhariton"
+  },
+  "config": {
+    "version": "2.0",
+    "logicalId": "f9723677-84fc-40ee-8687-add355157752"
+  }
+}

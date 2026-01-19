@@ -1,0 +1,95 @@
+table 'City Metrics BP All Regions'
+	lineageTag: 98210167-7c06-4eee-9766-33e0002b07b0
+
+	column City
+		dataType: string
+		lineageTag: 6cb89950-c9dd-43a6-848d-14484c58fd02
+		summarizeBy: none
+		sourceColumn: City
+
+		annotation SummarizationSetBy = Automatic
+
+	column Year
+		dataType: int64
+		formatString: 0
+		lineageTag: 5ce66ea3-a4f3-41b4-98fc-faf0abe89225
+		summarizeBy: sum
+		sourceColumn: Year
+
+		annotation SummarizationSetBy = Automatic
+
+	column Attribute
+		dataType: string
+		lineageTag: 44fbc264-0f93-44dd-bd0d-11a887ce28f7
+		summarizeBy: none
+		sourceColumn: Attribute
+
+		annotation SummarizationSetBy = Automatic
+
+	column Value
+		dataType: double
+		lineageTag: 22ff1f74-233c-4b76-9a38-cd0ec4882d2d
+		summarizeBy: sum
+		sourceColumn: Value
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column ValueForGrouping
+		dataType: double
+		lineageTag: ddfe15f7-07db-41b9-9f30-71822f2dbd66
+		summarizeBy: sum
+		sourceColumn: ValueForGrouping
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column Rank
+		dataType: int64
+		formatString: 0
+		lineageTag: 8a7da4a7-5376-418c-b815-e27a39824383
+		summarizeBy: sum
+		sourceColumn: Rank
+
+		annotation SummarizationSetBy = Automatic
+
+	column AttributeOrder
+		dataType: int64
+		formatString: 0
+		lineageTag: 7a636e30-7769-4220-837f-e579f008526f
+		summarizeBy: sum
+		sourceColumn: AttributeOrder
+
+		annotation SummarizationSetBy = Automatic
+
+	column Region
+		dataType: string
+		lineageTag: 3f5b183f-b379-4aa8-bd0a-54d43645234b
+		summarizeBy: none
+		sourceColumn: Region
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Region Rank'
+		dataType: int64
+		formatString: 0
+		lineageTag: 79e61f5e-3fb5-4f92-8c95-2c250408acbe
+		summarizeBy: sum
+		sourceColumn: Region Rank
+
+		annotation SummarizationSetBy = Automatic
+
+	partition 'City Metrics BP All Regions' = m
+		mode: import
+		source =
+				let
+				    Source = Table.Combine({#"City Metrics Non-BP", #"City Metrics BP"})
+				in
+				    Source
+
+	annotation PBI_NavigationStepName = Navigation
+
+	annotation PBI_ResultType = Table
+

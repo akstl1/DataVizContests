@@ -1,0 +1,79 @@
+table *Measures
+	lineageTag: 740efad4-2d31-4cf2-8da5-f3b84bb8b9d4
+
+	measure Value = MAX('City Metrics'[Value])
+		lineageTag: 302b0c1f-e932-43c1-b18a-c8db7c34f8bf
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	measure Rank = average('City Metrics'[Rank])
+		formatString: 0
+		lineageTag: 6ed8c4c4-06c5-44f4-a755-b086ad1c5317
+
+	measure RegionRank = AVERAGE('City Metrics'[Region Rank])
+		formatString: 0
+		lineageTag: 29cbbef2-7943-4a64-b053-e4cae136ae5b
+
+	measure LatestRank = CALCULATE(sum('City Metrics'[Rank]),'City Metrics'[Year]=2024)
+		formatString: 0
+		lineageTag: fb52b480-c166-4003-b58c-210db0b4d6f1
+
+	measure 'Rank (YoY)' =
+			
+			var _latest = [LatestRank]
+			var _priorRank = CALCULATE(sum('City Metrics'[Rank]),'City Metrics'[Year]=2023)
+			var _difference = _priorRank-_latest
+			var _symbol = SWITCH(TRUE(),_difference>0,UNICHAR(9650),_difference=0,UNICHAR(9644),UNICHAR(9660))
+			return _latest&" ("&_symbol&""&abs(_difference)&")"
+		lineageTag: ee65893b-6f5e-4b97-837a-6e8a41bf8109
+
+	measure LatestValue = CALCULATE(sum('City Metrics'[Value]),'City Metrics'[Year]=2024)
+		formatString: 0
+		lineageTag: f459e6ab-c32b-48ea-a764-5b61f1c6a5f4
+
+	measure 'Rank & Value' = [LatestRank]&" | "&[LatestValue]
+		lineageTag: 11cab926-2ebe-4df9-ad5c-424509d8d10b
+
+	measure 'YoY Value' =
+			
+			var _latest = [LatestValue]
+			var _priorRank = CALCULATE(sum('City Metrics'[Value]),'City Metrics'[Year]=2023)
+			var _difference = _latest-_priorRank
+			var _symbol = SWITCH(TRUE(),_difference>0,UNICHAR(9650),_difference=0,UNICHAR(9644),UNICHAR(9660))
+			return _symbol&" "&abs(round(_difference,2))
+		lineageTag: 2c7f7edb-29fe-4897-94c4-6dc368a71cb7
+
+	measure BriarportValue = calculate(sum('City Metrics'[Value]),REMOVEFILTERS('City Lookup'[Region]))
+		lineageTag: 43d6cd6b-653c-442b-a5a3-81a7edcc3986
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	measure 'Ten Year Difference' =
+			
+			var _latest = [LatestValue]
+			var _earliest = CALCULATE([Value],'City Metrics'[Year]=2015)
+			return _latest-_earliest
+		lineageTag: 5b936776-96b2-4832-94d0-95339e688b06
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column *Measures
+		dataType: string
+		lineageTag: cf5779f2-a6de-4808-affa-ad975fe36339
+		summarizeBy: none
+		sourceColumn: *Measures
+
+		annotation SummarizationSetBy = Automatic
+
+	partition *Measures = m
+		mode: import
+		source =
+				let
+				    Source = ""
+				in
+				    Source
+
+	annotation PBI_NavigationStepName = Navigation
+
+	annotation PBI_ResultType = Text
+
