@@ -2,12 +2,12 @@
   "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/visualContainer/2.4.0/schema.json",
   "name": "72d90b25e20d2b06068e",
   "position": {
-    "x": 548.05970149253733,
-    "y": 282.08955223880594,
-    "z": 7006,
-    "height": 429.85074626865668,
-    "width": 294.62686567164178,
-    "tabOrder": 6010
+    "x": 167.58620689655172,
+    "y": 393.69458128078816,
+    "z": 5000,
+    "height": 304.13793103448273,
+    "width": 723.54679802955661,
+    "tabOrder": 1000
   },
   "visual": {
     "visualType": "barChart",
@@ -47,11 +47,11 @@
                       "Property": "Value"
                     }
                   },
-                  "Function": 0
+                  "Function": 1
                 }
               },
               "queryRef": "Sum(City Metrics.Value)",
-              "nativeQueryRef": "Sum of Value"
+              "nativeQueryRef": "Average of Value"
             }
           ]
         }
@@ -71,7 +71,7 @@
                     "Property": "Value"
                   }
                 },
-                "Function": 0
+                "Function": 1
               }
             },
             "direction": "Descending"
@@ -140,6 +140,124 @@
             ]
           }
         }
+      ],
+      "categoryAxis": [
+        {
+          "properties": {
+            "showAxisTitle": {
+              "expr": {
+                "Literal": {
+                  "Value": "false"
+                }
+              }
+            }
+          }
+        }
+      ],
+      "valueAxis": [
+        {
+          "properties": {
+            "showAxisTitle": {
+              "expr": {
+                "Literal": {
+                  "Value": "false"
+                }
+              }
+            }
+          }
+        }
+      ]
+    },
+    "visualContainerObjects": {
+      "border": [
+        {
+          "properties": {
+            "show": {
+              "expr": {
+                "Literal": {
+                  "Value": "true"
+                }
+              }
+            },
+            "color": {
+              "solid": {
+                "color": {
+                  "expr": {
+                    "ThemeDataColor": {
+                      "ColorId": 0,
+                      "Percent": 0
+                    }
+                  }
+                }
+              }
+            },
+            "radius": {
+              "expr": {
+                "Literal": {
+                  "Value": "10D"
+                }
+              }
+            }
+          }
+        }
+      ],
+      "title": [
+        {
+          "properties": {
+            "text": {
+              "expr": {
+                "Measure": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "*Measures"
+                    }
+                  },
+                  "Property": "SouthRank"
+                }
+              }
+            },
+            "alignment": {
+              "expr": {
+                "Literal": {
+                  "Value": "'center'"
+                }
+              }
+            },
+            "fontSize": {
+              "expr": {
+                "Literal": {
+                  "Value": "13D"
+                }
+              }
+            }
+          }
+        }
+      ],
+      "spacing": [
+        {
+          "properties": {
+            "verticalSpacing": {
+              "expr": {
+                "Literal": {
+                  "Value": "5D"
+                }
+              }
+            }
+          }
+        }
+      ],
+      "general": [
+        {
+          "properties": {
+            "altText": {
+              "expr": {
+                "Literal": {
+                  "Value": "'This is a bar chart showing regional average performance in 2024, with a spotlight on the Southern region'"
+                }
+              }
+            }
+          }
+        }
       ]
     },
     "drillFilterOtherVisuals": true
@@ -201,7 +319,7 @@
         "howCreated": "User"
       },
       {
-        "name": "ac6f8bd100bed7d1cab5",
+        "name": "1c23fb8119d3061e1004",
         "field": {
           "Column": {
             "Expression": {
@@ -215,7 +333,7 @@
         "type": "Categorical"
       },
       {
-        "name": "64a21958090e1abe160a",
+        "name": "456b1f62920179181967",
         "field": {
           "Aggregation": {
             "Expression": {
@@ -228,7 +346,7 @@
                 "Property": "Value"
               }
             },
-            "Function": 0
+            "Function": 1
           }
         },
         "type": "Advanced"

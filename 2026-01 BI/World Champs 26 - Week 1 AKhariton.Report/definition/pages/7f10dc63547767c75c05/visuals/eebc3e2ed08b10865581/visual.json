@@ -2,12 +2,12 @@
   "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/visualContainer/2.4.0/schema.json",
   "name": "eebc3e2ed08b10865581",
   "position": {
-    "x": 903.43351620757653,
-    "y": 210.14778325123152,
-    "z": 8000,
-    "height": 502.75862068965517,
+    "x": 903.54679802955661,
+    "y": 24.054187192118185,
+    "z": 3000,
+    "height": 673.89162561576359,
     "width": 359.11330049261085,
-    "tabOrder": 8000
+    "tabOrder": 0
   },
   "visual": {
     "visualType": "textbox",
@@ -19,7 +19,93 @@
               {
                 "textRuns": [
                   {
-                    "value": "Narrative text"
+                    "value": "Composite Livability",
+                    "textStyle": {
+                      "fontWeight": "bold"
+                    }
+                  },
+                  {
+                    "value": ": Briarport currently ranks 5th in composite livability, unchanged from its 2015 position, placing it squarely in the middle tier of surveyed cities. The city has performed above average on this metric in each of the past ten years; however, its 1.14-point improvement since 2015 ranks only 7th overall, indicating relatively modest progress compared with peer cities."
+                  }
+                ]
+              },
+              {
+                "textRuns": [
+                  {
+                    "value": ""
+                  }
+                ]
+              },
+              {
+                "textRuns": [
+                  {
+                    "value": "Housing Affordability",
+                    "textStyle": {
+                      "fontWeight": "bold"
+                    }
+                  },
+                  {
+                    "value": ": Briarport has led all cities in housing affordability for each of the past ten years and has recorded a 3.02-point reduction since 2015—the second-largest improvement among all surveyed cities."
+                  }
+                ]
+              },
+              {
+                "textRuns": [
+                  {
+                    "value": ""
+                  }
+                ]
+              },
+              {
+                "textRuns": [
+                  {
+                    "value": "Emissions Index",
+                    "textStyle": {
+                      "fontWeight": "bold"
+                    }
+                  },
+                  {
+                    "value": ": Briarport now ranks 6th in emissions performance, an improvement of three positions since 2015, moving the city into the middle tier after starting near the bottom of the rankings. This shift is driven by a 10.86-point reduction over the past decade, the largest emissions improvement of any city during this period."
+                  }
+                ]
+              },
+              {
+                "textRuns": [
+                  {
+                    "value": ""
+                  }
+                ]
+              },
+              {
+                "textRuns": [
+                  {
+                    "value": "Green Space Pct",
+                    "textStyle": {
+                      "fontWeight": "bold"
+                    }
+                  },
+                  {
+                    "value": ": Briarport’s standing in green space coverage has weakened since 2015. The city has fallen one position in the rankings, while its score declined by 1.57 points—an outcome worse than that of ten of the eleven peer cities."
+                  }
+                ]
+              },
+              {
+                "textRuns": [
+                  {
+                    "value": ""
+                  }
+                ]
+              },
+              {
+                "textRuns": [
+                  {
+                    "value": "Transit Quality",
+                    "textStyle": {
+                      "fontWeight": "bold"
+                    }
+                  },
+                  {
+                    "value": ": Transit quality in Briarport has declined by 6.74 points since 2015, representing the steepest drop among all surveyed cities and resulting in a two-position fall in the rankings. Despite this decline, Briarport remained above average in every year except 2024, underscoring a strong transit-oriented foundation that can be leveraged for future improvements."
                   }
                 ]
               }
@@ -43,9 +129,8 @@
               "solid": {
                 "color": {
                   "expr": {
-                    "ThemeDataColor": {
-                      "ColorId": 0,
-                      "Percent": 0
+                    "Literal": {
+                      "Value": "'#91D48B'"
                     }
                   }
                 }
@@ -55,6 +140,63 @@
               "expr": {
                 "Literal": {
                   "Value": "10D"
+                }
+              }
+            }
+          }
+        }
+      ],
+      "background": [
+        {
+          "properties": {
+            "color": {
+              "solid": {
+                "color": {
+                  "expr": {
+                    "Literal": {
+                      "Value": "'#F3F2F1'"
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+      ],
+      "title": [
+        {
+          "properties": {
+            "show": {
+              "expr": {
+                "Literal": {
+                  "Value": "true"
+                }
+              }
+            },
+            "text": {
+              "expr": {
+                "Literal": {
+                  "Value": "'Findings'"
+                }
+              }
+            },
+            "alignment": {
+              "expr": {
+                "Literal": {
+                  "Value": "'center'"
+                }
+              }
+            }
+          }
+        }
+      ],
+      "general": [
+        {
+          "properties": {
+            "altText": {
+              "expr": {
+                "Literal": {
+                  "Value": "'This is a text field with findings/insights of the peer analysis on this page.'"
                 }
               }
             }

@@ -23,6 +23,9 @@ table 'City Metrics'
 		lineageTag: 289c28af-bd3c-43d1-ba17-574c2a21e548
 		summarizeBy: none
 		sourceColumn: Attribute
+		sortByColumn: AttributeOrder
+
+		changedProperty = SortByColumn
 
 		annotation SummarizationSetBy = Automatic
 
@@ -81,6 +84,28 @@ table 'City Metrics'
 
 		annotation SummarizationSetBy = Automatic
 
+	column 'Attribute Slicer Name'
+		dataType: string
+		lineageTag: 6ddfab45-e700-4773-b50e-caed5d0ff156
+		summarizeBy: none
+		sourceColumn: Attribute Slicer Name
+		sortByColumn: AttributeOrder
+
+		changedProperty = SortByColumn
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Attribute Header Name'
+		dataType: string
+		lineageTag: dc0365e7-e6f2-45d0-be89-c164df035b59
+		summarizeBy: none
+		sourceColumn: Attribute Header Name
+		sortByColumn: AttributeOrder
+
+		changedProperty = SortByColumn
+
+		annotation SummarizationSetBy = Automatic
+
 	partition 'City Metrics' = m
 		mode: import
 		source =
@@ -102,7 +127,7 @@ table 'City Metrics'
 				    #"Replaced Value2" = Table.ReplaceValue(#"Replaced Value1","HousingAffordabilityIndex","Housing Affordability Index",Replacer.ReplaceText,{"Attribute"}),
 				    #"Replaced Value3" = Table.ReplaceValue(#"Replaced Value2","LivabilityComposite","Composite Livability",Replacer.ReplaceText,{"Attribute"}),
 				    #"Replaced Value4" = Table.ReplaceValue(#"Replaced Value3","TransitScore","Transit Score",Replacer.ReplaceText,{"Attribute"}),
-				    #"Added Custom1" = Table.AddColumn(#"Replaced Value4", "AttributeOrder", each if [Attribute]="Composite Livability" then 1 else if [Attribute]="Housing Affordability Index" then 2 else if [Attribute]= "Emissions Index" then 3 else if [Attribute]= "Emissions Index" then 4 else 5),
+				    #"Added Custom1" = Table.AddColumn(#"Replaced Value4", "AttributeOrder", each if [Attribute]="Composite Livability" then 1 else if [Attribute]="Housing Affordability Index" then 2 else if [Attribute]= "Emissions Index" then 3 else if [Attribute]= "Green Space Pct" then 4 else 5),
 				    #"Changed Type2" = Table.TransformColumnTypes(#"Added Custom1",{{"AttributeOrder", Int64.Type}, {"Year", Int64.Type}}),
 				    #"Merged Queries" = Table.NestedJoin(#"Changed Type2", {"City"}, #"City Lookup", {"City"}, "City Lookup", JoinKind.LeftOuter),
 				    #"Expanded City Lookup" = Table.ExpandTableColumn(#"Merged Queries", "City Lookup", {"Region"}, {"Region"}),
@@ -110,9 +135,11 @@ table 'City Metrics'
 				    #"RegionRank"= Table.AddColumn(#"Regional Grouping", "Custom", each Table.AddIndexColumn([Count],"Region Rank",1,1)),
 				    #"Removed Columns1" = Table.RemoveColumns(RegionRank,{"Year", "Attribute", "Region", "Count"}),
 				    #"Expanded Custom1" = Table.ExpandTableColumn(#"Removed Columns1", "Custom", {"City", "Year", "Attribute", "Value", "ValueForGrouping", "Rank", "AttributeOrder", "Region", "Region Rank"}, {"City", "Year", "Attribute", "Value", "ValueForGrouping", "Rank", "AttributeOrder", "Region", "Region Rank"}),
-				    #"Changed Type4" = Table.TransformColumnTypes(#"Expanded Custom1",{{"City", type text}, {"Attribute", type text}, {"Region", type text}, {"Year", Int64.Type}, {"Rank", Int64.Type}, {"AttributeOrder", Int64.Type}, {"Region Rank", Int64.Type}, {"ValueForGrouping", type number}, {"Value", type number}})
+				    #"Changed Type4" = Table.TransformColumnTypes(#"Expanded Custom1",{{"City", type text}, {"Attribute", type text}, {"Region", type text}, {"Year", Int64.Type}, {"Rank", Int64.Type}, {"AttributeOrder", Int64.Type}, {"Region Rank", Int64.Type}, {"ValueForGrouping", type number}, {"Value", type number}}),
+				    #"Merged Queries1" = Table.NestedJoin(#"Changed Type4", {"Attribute"}, #"Metric Renaming", {"Attribute"}, "Metric Renaming", JoinKind.LeftOuter),
+				    #"Expanded Metric Renaming" = Table.ExpandTableColumn(#"Merged Queries1", "Metric Renaming", {"Attribute Slicer Name", "Attribute Header Name"}, {"Attribute Slicer Name", "Attribute Header Name"})
 				in
-				    #"Changed Type4"
+				    #"Expanded Metric Renaming"
 
 	annotation PBI_NavigationStepName = Navigation
 

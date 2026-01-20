@@ -1,0 +1,229 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/visualContainer/2.4.0/schema.json",
+  "name": "9eef48782428a0c2ba65",
+  "position": {
+    "x": 177.33990147783251,
+    "y": 276.6502463054187,
+    "z": 2000,
+    "height": 421.18226600985224,
+    "width": 1074.6798029556651,
+    "tabOrder": 0
+  },
+  "visual": {
+    "visualType": "textbox",
+    "objects": {
+      "general": [
+        {
+          "properties": {
+            "paragraphs": [
+              {
+                "textRuns": [
+                  {
+                    "value": "An analysis of Briarport’s five key livability metrics reveals a city that has made meaningful progress in targeted areas, but whose "
+                  },
+                  {
+                    "value": "overall livability has remained largely unchanged over the past decade",
+                    "textStyle": {
+                      "fontWeight": "bold"
+                    }
+                  },
+                  {
+                    "value": ". While several initiatives have delivered strong results, these gains have not yet translated into a significant improvement in Briarport’s Composite Livability Score, which increased by only approximately one point between 2015 and 2024, leaving the city positioned near the average among peer cities."
+                  }
+                ]
+              },
+              {
+                "textRuns": [
+                  {
+                    "value": ""
+                  }
+                ]
+              },
+              {
+                "textRuns": [
+                  {
+                    "value": "Briarport’s strongest performance over the past decade has been in housing affordability and emissions reduction",
+                    "textStyle": {
+                      "fontWeight": "bold"
+                    }
+                  },
+                  {
+                    "value": ". The city has ranked first in the Housing Affordability Index among surveyed cities throughout the period, reflecting sustained investment in large-scale, affordable, mixed-use residential development. In parallel, Briarport achieved the largest reduction in the Emissions Index of any peer city since 2015. This progress underscores a strong return on investment from optimized infrastructure operations, expanded clean public energy resources, and incentives supporting private-sector adoption of clean energy."
+                  }
+                ]
+              },
+              {
+                "textRuns": [
+                  {
+                    "value": ""
+                  }
+                ]
+              },
+              {
+                "textRuns": [
+                  {
+                    "value": "In contrast, "
+                  },
+                  {
+                    "value": "Briarport has underperformed in transit accessibility and green space availability",
+                    "textStyle": {
+                      "fontWeight": "bold"
+                    }
+                  },
+                  {
+                    "value": ". In 2024, both metrics ranked below the peer-city average. Briarport’s transit score declined by 6.8 points from 2015—representing the largest decrease among surveyed cities—while green space coverage fell by 1.6 points over the same period, a decline exceeded by only one other city. These trends have constrained broader improvements in overall livability, offsetting gains achieved in affordability and emissions reduction."
+                  }
+                ]
+              },
+              {
+                "textRuns": [
+                  {
+                    "value": ""
+                  }
+                ]
+              },
+              {
+                "textRuns": [
+                  {
+                    "value": "To strengthen Briarport’s livability outcomes and improve its Composite Livability Score, stakeholders should prioritize the following actions:"
+                  }
+                ]
+              },
+              {
+                "textRuns": [
+                  {
+                    "value": "Transit:",
+                    "textStyle": {
+                      "fontWeight": "bold"
+                    }
+                  },
+                  {
+                    "value": " Advance and expand the city’s master transportation plan to deliver a comprehensive, well-connected transit network that serves both the urban core and the surrounding suburban areas."
+                  }
+                ],
+                "listType": "bullet"
+              },
+              {
+                "textRuns": [
+                  {
+                    "value": "Green Space:",
+                    "textStyle": {
+                      "fontWeight": "bold"
+                    }
+                  },
+                  {
+                    "value": " Reinforce policies that integrate accessible green space into infrastructure projects, ensuring new development is balanced with environmental and community well-being."
+                  }
+                ],
+                "listType": "bullet"
+              },
+              {
+                "textRuns": [
+                  {
+                    "value": "Emissions:",
+                    "textStyle": {
+                      "fontWeight": "bold"
+                    }
+                  },
+                  {
+                    "value": " Build on current momentum by continuing investments in clean infrastructure and energy systems, positioning Briarport as a long-term leader in air pollution reduction."
+                  }
+                ],
+                "listType": "bullet"
+              },
+              {
+                "textRuns": [
+                  {
+                    "value": ""
+                  }
+                ]
+              },
+              {
+                "textRuns": [
+                  {
+                    "value": "With focused, strategic investment in these areas, Briarport is well positioned to convert its sector-specific successes into broader livability gains and to strengthen its standing as a sustainable and competitive city."
+                  }
+                ]
+              }
+            ]
+          }
+        }
+      ]
+    },
+    "visualContainerObjects": {
+      "border": [
+        {
+          "properties": {
+            "show": {
+              "expr": {
+                "Literal": {
+                  "Value": "true"
+                }
+              }
+            },
+            "radius": {
+              "expr": {
+                "Literal": {
+                  "Value": "10D"
+                }
+              }
+            },
+            "color": {
+              "solid": {
+                "color": {
+                  "expr": {
+                    "ThemeDataColor": {
+                      "ColorId": 0,
+                      "Percent": 0
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+      ],
+      "title": [
+        {
+          "properties": {
+            "show": {
+              "expr": {
+                "Literal": {
+                  "Value": "true"
+                }
+              }
+            },
+            "text": {
+              "expr": {
+                "Literal": {
+                  "Value": "'Executive Summary'"
+                }
+              }
+            },
+            "alignment": {
+              "expr": {
+                "Literal": {
+                  "Value": "'center'"
+                }
+              }
+            }
+          }
+        }
+      ],
+      "general": [
+        {
+          "properties": {
+            "altText": {
+              "expr": {
+                "Literal": {
+                  "Value": "'This text box serves as an executive summary narrative'"
+                }
+              }
+            }
+          }
+        }
+      ]
+    },
+    "drillFilterOtherVisuals": true
+  }
+}

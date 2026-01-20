@@ -1,0 +1,23 @@
+DEFINE
+	VAR __DS0FilterTable = 
+		TREATAS({"Green Space"}, 'Metric Renaming'[Attribute Slicer Name])
+
+	VAR __DS0Core = 
+		SUMMARIZECOLUMNS(
+			'City Metrics'[Year],
+			__DS0FilterTable,
+			"BriarportOnlyValue", '*Measures'[BriarportOnlyValue],
+			"Average", '*Measures'[Average],
+			"AVgBetterOrWorse", '*Measures'[AVgBetterOrWorse]
+		)
+
+	
+	VAR _final = COUNTROWS(SELECTCOLUMNS(FILTER(__DS0Core,[AVgBetterOrWorse]=1),[AVgBetterOrWorse]))
+	// VAR _final2 = CALCULATE(COUNTROWS(__DS0Core),[AVgBetterOrWorse]=1)
+
+
+EVALUATE
+	_final
+
+// ORDER BY
+// 	'City Metrics'[Year]

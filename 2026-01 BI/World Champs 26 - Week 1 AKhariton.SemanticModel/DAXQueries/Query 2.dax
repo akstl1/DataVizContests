@@ -1,0 +1,4 @@
+DEFINE
+var _table = SUMMARIZE(FILTER('City Metrics','City Metrics'[Year]=2024),'City Metrics'[Region],'City Metrics'[Attribute],"Average",average('City Metrics'[Value]))
+var _table2 = ADDCOLUMNS(_table,"Rank",rank(DENSE,_table,ORDERBY('City Metrics'[Attribute],ASC,[Average],DESC),,PARTITIONBY('City Metrics'[Attribute])))
+evaluate _table2

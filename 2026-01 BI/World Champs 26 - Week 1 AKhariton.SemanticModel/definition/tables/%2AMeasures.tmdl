@@ -18,13 +18,15 @@ table *Measures
 		formatString: 0
 		lineageTag: fb52b480-c166-4003-b58c-210db0b4d6f1
 
-	measure 'Rank (YoY)' =
+	measure 'YoY Rank' =
 			
 			var _latest = [LatestRank]
 			var _priorRank = CALCULATE(sum('City Metrics'[Rank]),'City Metrics'[Year]=2023)
 			var _difference = _priorRank-_latest
-			var _symbol = SWITCH(TRUE(),_difference>0,UNICHAR(9650),_difference=0,UNICHAR(9644),UNICHAR(9660))
-			return _latest&" ("&_symbol&""&abs(_difference)&")"
+			// var _symbol = SWITCH(TRUE(),_difference>0,UNICHAR(9650),_difference=0,UNICHAR(9658),UNICHAR(9660))
+			var _symbol = SWITCH(TRUE(),_difference>0,"Improved by ",_difference=0,"Improved by ","Receded by ")
+			
+			return _symbol&""&abs(_difference)
 		lineageTag: ee65893b-6f5e-4b97-837a-6e8a41bf8109
 
 	measure LatestValue = CALCULATE(sum('City Metrics'[Value]),'City Metrics'[Year]=2024)
@@ -48,14 +50,227 @@ table *Measures
 
 		annotation PBI_FormatHint = {"isGeneralNumber":true}
 
-	measure 'Ten Year Difference' =
+	measure 'Ten Year Difference Briarport' =
 			
-			var _latest = [LatestValue]
-			var _earliest = CALCULATE([Value],'City Metrics'[Year]=2015)
+			var _latest = CALCULATE([Value],'City Metrics'[Year]=2024,'City Metrics'[City]="Briarport")
+			var _earliest = CALCULATE([Value],'City Metrics'[Year]=2015,'City Metrics'[City]="Briarport")
 			return _latest-_earliest
 		lineageTag: 5b936776-96b2-4832-94d0-95339e688b06
 
 		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	measure Average = CALCULATE(average('City Metrics'[Value]))
+		lineageTag: a87511f3-7af5-4459-8da0-d48ace8dba58
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	measure BriarportOnlyValue = calculate(sum('City Metrics'[Value]),'City Metrics'[City]="Briarport")
+		lineageTag: a1fa84bd-4ad3-49a2-9832-4627affb822a
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	measure 'Ten Year ImproveDecline' =
+			
+			var _difference = [Ten Year Difference Briarport]
+			var _metric = SELECTEDVALUE('City Metrics'[Attribute Header Name])
+			var _trend = SWITCH(TRUE(),
+			                        _difference>0 && NOT(CONTAINSSTRING(_metric,"Housing")) && NOT(CONTAINSSTRING(_metric,"Emissions")),"improving",
+			                        _difference>0,"receding",
+			                        _difference<0 && NOT(CONTAINSSTRING(_metric,"Housing")) && NOT(CONTAINSSTRING(_metric,"Emissions")),"receding",
+			                        _difference<0,"improving",
+			                        "stable"
+			)
+			RETURN _metric&" is " &_trend
+		lineageTag: 744b7283-90dc-42c9-933a-e0d9b2f2165f
+
+	measure 'Ten Year %' =
+			
+			var _latest = CALCULATE([Value],'City Metrics'[Year]=2024,'City Metrics'[City]="Briarport")
+			var _earliest = CALCULATE([Value],'City Metrics'[Year]=2015,'City Metrics'[City]="Briarport")
+			return format(DIVIDE(_latest-_earliest,_earliest,0),"##.##%")
+		lineageTag: 39909efb-9577-4c78-abb8-ca9b56d77e87
+
+	measure 'ImproveDecline Color' =
+			
+			var _status = [Ten Year ImproveDecline]
+			RETURN SWITCH(TRUE(),
+			                CONTAINSSTRING(_status,"improv"),1,
+			                CONTAINSSTRING(_status,"rec"),2,
+			                3
+			)
+		formatString: 0
+		lineageTag: c9704c7f-1e78-45fd-ac34-9dd96531707d
+
+	measure 'Ten Year Difference Bar Chart' =
+			
+			var _latest = CALCULATE(sum('City Metrics'[Value]),'City Metrics'[Year]=2024)
+			var _earliest = CALCULATE(sum('City Metrics'[Value]),'City Metrics'[Year]=2015)
+			return _latest-_earliest
+		lineageTag: 1be85895-3b01-4a76-b823-5785ae9b55ae
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	measure 'Ten Year Difference Header' =
+			
+			var _value = round([Ten Year Difference Briarport],2)
+			var _selected = SELECTEDVALUE('City Metrics'[Attribute Header Name])
+			var _grammar = SWITCH(TRUE(),CONTAINSSTRING(_selected,"Emissions")," are "," is ")
+			var _sign = SWITCH(TRUE(),_value>0,"up ","down ")
+			return _selected&" in Briarport" &_grammar& _sign&abs(_value)&" points since 2015"
+		lineageTag: 526b4fb1-a0ed-4373-ad8b-5a583df9399d
+
+	measure SouthRank =
+			
+			var _attribute = SELECTEDVALUE('City Metrics'[Attribute])
+			var _value = CONVERT(CALCULATE(SUM(RegionRankings[FinalRanking]),RegionRankings[Region]="South",RegionRankings[Attribute]=_attribute),INTEGER)
+			var _text = SWITCH(TRUE(),
+			                    _value=1, "best",
+			                    _value=2,"above average",
+			                    _value=3, "below average",
+			                    _value=4,"worst"
+			)
+			return "The Southern region ranks " & _text &" in " & SELECTEDVALUE('City Metrics'[Attribute Header Name])&" in 2024"
+		lineageTag: 54398d53-7e80-4fdd-8f80-211dd73c7acc
+
+	measure BriarportRank =
+			
+			var _attribute = SELECTEDVALUE('City Metrics'[Attribute])
+			var _value = CONVERT(CALCULATE(SUM('City Metrics'[Region Rank]),'City Metrics'[City]="Briarport",'City Metrics'[Attribute]=_attribute,'City Metrics'[Year]=2024),INTEGER)
+			var _text = SWITCH(TRUE(),
+			                    _value=1, "best",
+			                    _value=2,"above average",
+			                    _value=3, "below average",
+			                    _value=4,"worst"
+			)
+			return "Briarport ranks " & _text &" in " & SELECTEDVALUE('City Metrics'[Attribute Header Name])&" compared to other Southern cities in 2024"
+		lineageTag: 40edd8c4-2c40-4e3f-8730-714ffa41fdd0
+
+	measure BriarportRankOtherRegions =
+			
+			var _attribute = SELECTEDVALUE('City Metrics'[Attribute])
+			var _value = CALCULATE(SUM('City Metrics'[Rank]),'City Metrics'[City]="Briarport",'City Metrics'[Attribute]=_attribute,'City Metrics'[Year]=2024)
+			
+			var _westCities = CALCULATE(COUNT('City Metrics'[City]),'City Metrics'[Region]="West",'City Metrics'[Attribute]=_attribute,'City Metrics'[Year]=2024)
+			var _west = COALESCE(CALCULATE(COUNT('City Metrics'[City]),'City Metrics'[Region]="West",'City Metrics'[Attribute]=_attribute,'City Metrics'[Year]=2024,'City Metrics'[Rank]>_value),0)
+			
+			var _MidwestCities = CALCULATE(COUNT('City Metrics'[City]),'City Metrics'[Region]="Midwest",'City Metrics'[Attribute]=_attribute,'City Metrics'[Year]=2024)
+			var _Midwest = COALESCE(CALCULATE(COUNT('City Metrics'[City]),'City Metrics'[Region]="Midwest",'City Metrics'[Attribute]=_attribute,'City Metrics'[Year]=2024,'City Metrics'[Rank]>_value),0)
+			
+			var _NortheastCities = CALCULATE(COUNT('City Metrics'[City]),'City Metrics'[Region]="Northeast",'City Metrics'[Attribute]=_attribute,'City Metrics'[Year]=2024)
+			var _Northeast = COALESCE(CALCULATE(COUNT('City Metrics'[City]),'City Metrics'[Region]="Northeast",'City Metrics'[Attribute]=_attribute,'City Metrics'[Year]=2024,'City Metrics'[Rank]>_value),0)
+			
+			return "Briarport ranks better than " &_west&"/"&_westCities&" Western cities, "&_Midwest&"/"&_MidwestCities&" Midwestern cities, and "&_Northeast&"/"&_NortheastCities&" Northeastern cities"
+		lineageTag: e7da688d-2c3a-41eb-9c46-76499751cd52
+
+	measure 'Ten Year ImproveDecline AllMeasures' =
+			
+			var _difference = [Ten Year Difference Briarport]
+			var _metric = SELECTEDVALUE('City Metrics'[Attribute Header Name])
+			var _trend = SWITCH(TRUE(),
+			                        _difference>0 && NOT(CONTAINSSTRING(_metric,"Housing")) && NOT(CONTAINSSTRING(_metric,"Emissions")),"improving",
+			                        _difference>0,"receding",
+			                        _difference<0 && NOT(CONTAINSSTRING(_metric,"Housing")) && NOT(CONTAINSSTRING(_metric,"Emissions")),"receding",
+			                        _difference<0,"improving",
+			                        "stable"
+			)
+			RETURN _metric&" is " &_trend
+		lineageTag: d533debf-8cf3-42ba-8ecf-cc538cb1b8c8
+
+	measure MaxValue = ```
+			
+			var _selected = SELECTEDVALUE('City Metrics'[Attribute])
+			var _check = CALCULATE(max('City Metrics'[Value]),ALLEXCEPT('City Metrics','City Metrics'[Attribute],'City Metrics'[City]))
+			RETURN IF ( [Value] = _check, [Value] )
+			
+			```
+		lineageTag: d322ac3c-2677-412d-989a-8f39778872fe
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	measure MinValue = ```
+			
+			var _selected = SELECTEDVALUE('City Metrics'[Attribute])
+			var _check = CALCULATE(min('City Metrics'[Value]),ALLEXCEPT('City Metrics','City Metrics'[Attribute],'City Metrics'[City]))
+			RETURN IF ( [Value] = _check, [Value] )
+			
+			```
+		lineageTag: fe8a8bd2-a0df-4b0d-bf58-6a0a4a26a868
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	measure 'Ten Year % and text' =
+			
+			var _pct = [Ten Year %]
+			var _value = [Ten Year Difference Briarport]
+			var _upDown = SWITCH(TRUE(),CONTAINSSTRING(_pct,"-"),"Reduction of ","Increase of ")
+			return _upDown&abs(round(_value,2))&" pts ("&if(CONTAINSSTRING(_pct,"-"),SUBSTITUTE(_pct,"-",""),_pct)&") since 2015"
+		lineageTag: 7e24e54b-fb74-41fd-972e-d9847cef936d
+
+	measure 'Rank Text' =
+			
+			var _val = CALCULATE([LatestRank],'City Metrics'[Year]=2024,'City Metrics'[City]="Briarport")
+			var _lastYearval = CALCULATE([Rank],'City Metrics'[Year]=2023,'City Metrics'[City]="Briarport")
+			var _difference = _lastYearval-_val
+			var _upDown = SWITCH(TRUE(),
+			                        _difference>0,"Improved by "&abs(_difference)&" YoY",
+			                        _difference<0,"Declined by "&abs(_difference)&" YoY",
+			                        "No change YoY"
+			)
+			return "Ranks #"&_val&" overall | "&_upDown
+		lineageTag: c1f6ea32-2ff1-43ef-9ed7-87f9ef1aa011
+
+	measure 'Avg BetterOrWorseFinal' = ```
+			
+			var _selected = SELECTEDVALUE('City Metrics'[Attribute])
+				VAR __DS0FilterTable = 
+					TREATAS({_selected}, 'Metric Renaming'[Attribute])
+			
+				VAR __DS0Core = 
+					SUMMARIZECOLUMNS(
+						'City Metrics'[Year],
+						__DS0FilterTable,
+						"BriarportOnlyValue", '*Measures'[BriarportOnlyValue],
+						"Average", '*Measures'[Average],
+						"AVgBetterOrWorse", '*Measures'[AVgBetterOrWorse]
+					)
+			
+				
+				VAR _final = COUNTROWS(SELECTCOLUMNS(FILTER(__DS0Core,[AVgBetterOrWorse]=1),[AVgBetterOrWorse]))
+				// VAR _final2 = CALCULATE(COUNTROWS(__DS0Core),[AVgBetterOrWorse]=1)
+			
+			
+			return
+				"Better than average in "&_final&" of the past 10 years"
+			
+			```
+		lineageTag: a667a653-9414-4b83-927c-1c1af11a9ca7
+
+	measure AVgBetterOrWorse =
+			
+			var _all = [Average]
+			var _briar = [BriarportOnlyValue]
+			var _diff = _briar-_all
+			RETURN SWITCH(TRUE(),
+			                _diff>0&&SELECTEDVALUE('City Metrics'[Attribute])<>"Housing Affordability Index"&&SELECTEDVALUE('City Metrics'[Attribute])<>"Emissions Index",1,
+			                _diff>0,2,
+			                _diff<0&&SELECTEDVALUE('City Metrics'[Attribute])<>"Housing Affordability Index"&&SELECTEDVALUE('City Metrics'[Attribute])<>"Emissions Index",2,
+			                _diff<0,1
+			)
+		formatString: 0
+		lineageTag: 2451c29a-1995-4f80-a438-5fba77faf22b
+
+	measure 'Ten Year Rank Text' =
+			
+			var _val = CALCULATE([LatestRank],'City Metrics'[Year]=2024,'City Metrics'[City]="Briarport")
+			var _lastYearval = CALCULATE([Rank],'City Metrics'[Year]=2015,'City Metrics'[City]="Briarport")
+			var _difference = _lastYearval-_val
+			var _upDown = SWITCH(TRUE(),
+			                        _difference>0,"improved by "&abs(_difference),
+			                        _difference<0,"declined by "&abs(_difference),
+			                        "remained the same"
+			)
+			return "Rank has "&_upDown&" since 2015"
+		lineageTag: 22d56802-8b9a-4410-9833-19d637187ea3
 
 	column *Measures
 		dataType: string

@@ -4,38 +4,39 @@
     {
       "ordinal": 0,
       "scrollPosition": {
-        "x": 78,
+        "x": 0,
         "y": 0
       },
       "nodes": [
         {
           "location": {
             "x": 345,
-            "y": 202.375
+            "y": 304.80422015033014
           },
           "nodeIndex": "City Metrics",
           "size": {
             "height": 300,
             "width": 234
           },
-          "zIndex": 0
+          "zIndex": 1
         },
         {
           "location": {
             "x": 12,
-            "y": 84.375
+            "y": 148.75222517487995
           },
           "nodeIndex": "City Lookup",
+          "nodeLineageTag": "497ea5b1-fbee-4c4a-8ad2-e9ae64a32214",
           "size": {
             "height": 200,
             "width": 234
           },
-          "zIndex": 0
+          "zIndex": 2
         },
         {
           "location": {
             "x": 889,
-            "y": 203.875
+            "y": 306.30422015033014
           },
           "nodeIndex": "*Measures",
           "nodeLineageTag": "740efad4-2d31-4cf2-8da5-f3b84bb8b9d4",
@@ -43,12 +44,12 @@
             "height": 104,
             "width": 234
           },
-          "zIndex": 0
+          "zIndex": 3
         },
         {
           "location": {
-            "x": 1161,
-            "y": 161.125
+            "x": 1097.5800083742497,
+            "y": 508.77818776989795
           },
           "nodeIndex": "Parameter",
           "nodeLineageTag": "4991c938-6a13-4f22-af71-84b595b4962a",
@@ -56,11 +57,49 @@
             "height": 152,
             "width": 234
           },
+          "zIndex": 4
+        },
+        {
+          "location": {
+            "x": 679.00676622719072,
+            "y": 499.09590538946577
+          },
+          "nodeIndex": "City Metrics BP All Regions",
+          "nodeLineageTag": "98210167-7c06-4eee-9766-33e0002b07b0",
+          "size": {
+            "height": 296,
+            "width": 234
+          },
+          "zIndex": 5
+        },
+        {
+          "location": {
+            "x": 512.70415743589444,
+            "y": 25.9439104509904
+          },
+          "nodeIndex": "Metric Renaming",
+          "nodeLineageTag": "f5580859-12e4-4a2c-94c8-572e486b836a",
+          "size": {
+            "height": 152,
+            "width": 234
+          },
+          "zIndex": 6
+        },
+        {
+          "location": {
+            "x": 1369.5800083742497,
+            "y": 293.22396761956782
+          },
+          "nodeIndex": "RegionRankings",
+          "size": {
+            "height": 200,
+            "width": 234
+          },
           "zIndex": 0
         }
       ],
       "name": "All tables",
-      "zoomValue": 100,
+      "zoomValue": 70.95554390096882,
       "pinKeyFieldsToTop": false,
       "showExtraHeaderInfo": false,
       "hideKeyFieldsWhenCollapsed": false,

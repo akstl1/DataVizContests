@@ -621,6 +621,9 @@ cultureInfo en-US
 			        }
 			      },
 			      "State": "Generated",
+			      "Visibility": {
+			        "Value": "Hidden"
+			      },
 			      "Terms": [
 			        {
 			          "attribute": {
@@ -1671,16 +1674,6 @@ cultureInfo en-US
 			            "State": "Generated",
 			            "Weight": 0.99
 			          }
-			        },
-			        {
-			          "Rank": {
-			            "State": "Suggested",
-			            "Source": {
-			              "Type": "External",
-			              "Agent": "PowerBI.VisualColumnRename"
-			            },
-			            "Weight": 0.9
-			          }
 			        }
 			      ]
 			    },
@@ -2175,7 +2168,7 @@ cultureInfo en-US
 			      "Definition": {
 			        "Binding": {
 			          "ConceptualEntity": "*Measures",
-			          "ConceptualProperty": "Rank (YoY)"
+			          "ConceptualProperty": "YoY Rank"
 			        }
 			      },
 			      "State": "Generated",
@@ -2312,6 +2305,16 @@ cultureInfo en-US
 			              "Agent": "Thesaurus"
 			            },
 			            "Weight": 0.475
+			          }
+			        },
+			        {
+			          "2024 Livability Score": {
+			            "State": "Suggested",
+			            "Source": {
+			              "Type": "External",
+			              "Agent": "PowerBI.VisualColumnRename"
+			            },
+			            "Weight": 0.9
 			          }
 			        }
 			      ]
@@ -2794,9 +2797,6 @@ cultureInfo en-US
 			        }
 			      },
 			      "State": "Generated",
-			      "Visibility": {
-			        "Value": "Hidden"
-			      },
 			      "Terms": [
 			        {
 			          "city": {
@@ -2890,6 +2890,9 @@ cultureInfo en-US
 			        }
 			      },
 			      "State": "Generated",
+			      "Visibility": {
+			        "Value": "Hidden"
+			      },
 			      "Terms": [
 			        {
 			          "attribute": {
@@ -3583,9 +3586,3950 @@ cultureInfo en-US
 			          }
 			        }
 			      ]
+			    },
+			    "city_metrics.attribute_slicer_name": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "City Metrics",
+			          "ConceptualProperty": "Attribute Slicer Name"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "attribute slicer name": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "slicer": {
+			            "State": "Generated",
+			            "Weight": 0.97
+			          }
+			        },
+			        {
+			          "attribute slicer": {
+			            "State": "Generated",
+			            "Weight": 0.97
+			          }
+			        },
+			        {
+			          "slicer name": {
+			            "State": "Generated",
+			            "Weight": 0.97
+			          }
+			        },
+			        {
+			          "attribute slicer nickname": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.739
+			          }
+			        },
+			        {
+			          "attribute slicer title": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.739
+			          }
+			        },
+			        {
+			          "attribute slicer label": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.739
+			          }
+			        },
+			        {
+			          "attribute slicer tag": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.739
+			          }
+			        },
+			        {
+			          "slicer nickname": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.727
+			          }
+			        },
+			        {
+			          "slicer title": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.727
+			          }
+			        },
+			        {
+			          "slicer label": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.727
+			          }
+			        },
+			        {
+			          "slicer tag": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.727
+			          }
+			        }
+			      ]
+			    },
+			    "city_metrics.attribute_header_name": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "City Metrics",
+			          "ConceptualProperty": "Attribute Header Name"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "attribute header name": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "header": {
+			            "State": "Generated",
+			            "Weight": 0.97
+			          }
+			        },
+			        {
+			          "attribute header": {
+			            "State": "Generated",
+			            "Weight": 0.97
+			          }
+			        },
+			        {
+			          "header name": {
+			            "State": "Generated",
+			            "Weight": 0.97
+			          }
+			        },
+			        {
+			          "attribute header nickname": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.739
+			          }
+			        },
+			        {
+			          "attribute header title": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.739
+			          }
+			        },
+			        {
+			          "attribute header label": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.739
+			          }
+			        },
+			        {
+			          "attribute header tag": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.739
+			          }
+			        },
+			        {
+			          "header nickname": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.727
+			          }
+			        },
+			        {
+			          "header title": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.727
+			          }
+			        },
+			        {
+			          "header label": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.727
+			          }
+			        },
+			        {
+			          "header tag": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.727
+			          }
+			        },
+			        {
+			          "attribute shot": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.485
+			          }
+			        },
+			        {
+			          "attribute pass": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.485
+			          }
+			        }
+			      ]
+			    },
+			    "measure.ten_year_difference_briarport": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "*Measures",
+			          "ConceptualProperty": "Ten Year Difference Briarport"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "ten year difference briarport": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "ten yr difference briarport": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.617
+			          }
+			        }
+			      ]
+			    },
+			    "measure.average": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "*Measures",
+			          "ConceptualProperty": "Average"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "average": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "regular": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.476
+			          }
+			        },
+			        {
+			          "usual": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.476
+			          }
+			        },
+			        {
+			          "middling": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.476
+			          }
+			        },
+			        {
+			          "run-of-the-mill": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.476
+			          }
+			        },
+			        {
+			          "ordinary": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.476
+			          }
+			        },
+			        {
+			          "common": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.476
+			          }
+			        },
+			        {
+			          "standard": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.476
+			          }
+			        },
+			        {
+			          "mode": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.466
+			          }
+			        },
+			        {
+			          "norm": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.466
+			          }
+			        },
+			        {
+			          "mean": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.452
+			          }
+			        },
+			        {
+			          "Average of All Cities": {
+			            "State": "Suggested",
+			            "Source": {
+			              "Type": "External",
+			              "Agent": "PowerBI.VisualColumnRename"
+			            },
+			            "Weight": 0.9
+			          }
+			        }
+			      ]
+			    },
+			    "measure.briarport_only_value": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "*Measures",
+			          "ConceptualProperty": "BriarportOnlyValue"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "briarport only value": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "BriarportOnlyValue": {
+			            "Type": "Noun",
+			            "State": "Generated",
+			            "Weight": 0.99
+			          }
+			        },
+			        {
+			          "briarport only assessment": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.508
+			          }
+			        },
+			        {
+			          "briarport only worth": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.492
+			          }
+			        },
+			        {
+			          "briarport only price": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.492
+			          }
+			        },
+			        {
+			          "briarport only cost": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.492
+			          }
+			        },
+			        {
+			          "briarport only charge": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.492
+			          }
+			        },
+			        {
+			          "briarport only rate": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.492
+			          }
+			        },
+			        {
+			          "briarport only importance": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.482
+			          }
+			        },
+			        {
+			          "briarport only significance": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.482
+			          }
+			        },
+			        {
+			          "briarport only usefulness": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.482
+			          }
+			        },
+			        {
+			          "briarport only consequence": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.482
+			          }
+			        },
+			        {
+			          "Briarport": {
+			            "State": "Suggested",
+			            "Source": {
+			              "Type": "External",
+			              "Agent": "PowerBI.VisualColumnRename"
+			            },
+			            "Weight": 0.9
+			          }
+			        }
+			      ]
+			    },
+			    "measure.ten_year_ImproveDecline": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "*Measures",
+			          "ConceptualProperty": "Ten Year ImproveDecline"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "ten year ImproveDecline": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "ten yr improvedecline": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.609
+			          }
+			        }
+			      ]
+			    },
+			    "measure.ten_year_": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "*Measures",
+			          "ConceptualProperty": "Ten Year %"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "ten year %": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "ten year percentage": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.762
+			          }
+			        },
+			        {
+			          "ten year pct": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.739
+			          }
+			        },
+			        {
+			          "ten yr %": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.609
+			          }
+			        }
+			      ]
+			    },
+			    "measure.ImproveDecline_color": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "*Measures",
+			          "ConceptualProperty": "ImproveDecline Color"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "ImproveDecline color": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "improvedecline hue": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.5
+			          }
+			        },
+			        {
+			          "improvedecline tint": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.485
+			          }
+			        },
+			        {
+			          "improvedecline shade": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.485
+			          }
+			        },
+			        {
+			          "improvedecline dye": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.485
+			          }
+			        },
+			        {
+			          "improvedecline paint": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.485
+			          }
+			        },
+			        {
+			          "improvedecline pigment": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.485
+			          }
+			        }
+			      ]
+			    },
+			    "measure.ten_year_difference_bar_chart": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "*Measures",
+			          "ConceptualProperty": "Ten Year Difference Bar Chart"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "ten year difference bar chart": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "bar chart": {
+			            "State": "Generated",
+			            "Weight": 0.97
+			          }
+			        },
+			        {
+			          "difference bar chart": {
+			            "State": "Generated",
+			            "Weight": 0.97
+			          }
+			        },
+			        {
+			          "year difference bar chart": {
+			            "State": "Generated",
+			            "Weight": 0.97
+			          }
+			        },
+			        {
+			          "difference": {
+			            "State": "Generated",
+			            "Weight": 0.97
+			          }
+			        },
+			        {
+			          "year difference": {
+			            "State": "Generated",
+			            "Weight": 0.97
+			          }
+			        },
+			        {
+			          "ten year difference": {
+			            "State": "Generated",
+			            "Weight": 0.97
+			          }
+			        },
+			        {
+			          "ten yr difference bar chart": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.624
+			          }
+			        },
+			        {
+			          "yr difference bar chart": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.617
+			          }
+			        },
+			        {
+			          "ten yr difference": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.609
+			          }
+			        },
+			        {
+			          "yr difference": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.6
+			          }
+			        },
+			        {
+			          "ten year alteration bar chart": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.52
+			          }
+			        },
+			        {
+			          "ten year variance bar chart": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.52
+			          }
+			        },
+			        {
+			          "ten year modification bar chart": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.52
+			          }
+			        },
+			        {
+			          "ten year transformation bar chart": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.52
+			          }
+			        },
+			        {
+			          "ten year metamorphosis bar chart": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.52
+			          }
+			        },
+			        {
+			          "year alteration bar chart": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.514
+			          }
+			        }
+			      ]
+			    },
+			    "metric_renaming": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "Metric Renaming"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "metric renaming": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "renaming": {
+			            "State": "Generated",
+			            "Weight": 0.97
+			          }
+			        }
+			      ]
+			    },
+			    "metric_renaming.attribute": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "Metric Renaming",
+			          "ConceptualProperty": "Attribute"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "attribute": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "trait": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.491
+			          }
+			        },
+			        {
+			          "aspect": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.491
+			          }
+			        },
+			        {
+			          "element": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.491
+			          }
+			        },
+			        {
+			          "property": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.491
+			          }
+			        },
+			        {
+			          "quality": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.476
+			          }
+			        },
+			        {
+			          "characteristic": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.476
+			          }
+			        },
+			        {
+			          "feature": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.476
+			          }
+			        },
+			        {
+			          "point": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.476
+			          }
+			        },
+			        {
+			          "power": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.476
+			          }
+			        },
+			        {
+			          "part": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.476
+			          }
+			        }
+			      ]
+			    },
+			    "metric_renaming.attribute_slicer_name": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "Metric Renaming",
+			          "ConceptualProperty": "Attribute Slicer Name"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "attribute slicer name": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "slicer": {
+			            "State": "Generated",
+			            "Weight": 0.97
+			          }
+			        },
+			        {
+			          "attribute slicer": {
+			            "State": "Generated",
+			            "Weight": 0.97
+			          }
+			        },
+			        {
+			          "slicer name": {
+			            "State": "Generated",
+			            "Weight": 0.97
+			          }
+			        },
+			        {
+			          "attribute slicer nickname": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.739
+			          }
+			        },
+			        {
+			          "attribute slicer title": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.739
+			          }
+			        },
+			        {
+			          "attribute slicer label": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.739
+			          }
+			        },
+			        {
+			          "attribute slicer tag": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.739
+			          }
+			        },
+			        {
+			          "slicer nickname": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.727
+			          }
+			        },
+			        {
+			          "slicer title": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.727
+			          }
+			        },
+			        {
+			          "slicer label": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.727
+			          }
+			        },
+			        {
+			          "slicer tag": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.727
+			          }
+			        }
+			      ]
+			    },
+			    "metric_renaming.attribute_header_name": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "Metric Renaming",
+			          "ConceptualProperty": "Attribute Header Name"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "attribute header name": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "header": {
+			            "State": "Generated",
+			            "Weight": 0.97
+			          }
+			        },
+			        {
+			          "attribute header": {
+			            "State": "Generated",
+			            "Weight": 0.97
+			          }
+			        },
+			        {
+			          "header name": {
+			            "State": "Generated",
+			            "Weight": 0.97
+			          }
+			        },
+			        {
+			          "attribute header nickname": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.739
+			          }
+			        },
+			        {
+			          "attribute header title": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.739
+			          }
+			        },
+			        {
+			          "attribute header label": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.739
+			          }
+			        },
+			        {
+			          "attribute header tag": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.739
+			          }
+			        },
+			        {
+			          "header nickname": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.727
+			          }
+			        },
+			        {
+			          "header title": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.727
+			          }
+			        },
+			        {
+			          "header label": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.727
+			          }
+			        },
+			        {
+			          "header tag": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.727
+			          }
+			        },
+			        {
+			          "attribute shot": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.485
+			          }
+			        },
+			        {
+			          "attribute pass": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.485
+			          }
+			        }
+			      ]
+			    },
+			    "measure.ten_year_difference_header": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "*Measures",
+			          "ConceptualProperty": "Ten Year Difference Header"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "ten year difference header": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "header": {
+			            "State": "Generated",
+			            "Weight": 0.97
+			          }
+			        },
+			        {
+			          "difference header": {
+			            "State": "Generated",
+			            "Weight": 0.97
+			          }
+			        },
+			        {
+			          "year difference header": {
+			            "State": "Generated",
+			            "Weight": 0.97
+			          }
+			        },
+			        {
+			          "ten yr difference header": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.617
+			          }
+			        },
+			        {
+			          "yr difference header": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.609
+			          }
+			        },
+			        {
+			          "ten year difference shot": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.499
+			          }
+			        },
+			        {
+			          "ten year difference pass": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.499
+			          }
+			        },
+			        {
+			          "ten year difference goal": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.499
+			          }
+			        },
+			        {
+			          "year difference shot": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.492
+			          }
+			        },
+			        {
+			          "year difference pass": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.492
+			          }
+			        },
+			        {
+			          "year difference goal": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.492
+			          }
+			        },
+			        {
+			          "ten year difference slogan": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.489
+			          }
+			        },
+			        {
+			          "ten year difference legend": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.489
+			          }
+			        }
+			      ]
+			    },
+			    "measure.south_rank": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "*Measures",
+			          "ConceptualProperty": "SouthRank"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "south rank": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "SouthRank": {
+			            "Type": "Noun",
+			            "State": "Generated",
+			            "Weight": 0.99
+			          }
+			        }
+			      ]
+			    },
+			    "measure.briarport_rank": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "*Measures",
+			          "ConceptualProperty": "BriarportRank"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "briarport rank": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "BriarportRank": {
+			            "Type": "Noun",
+			            "State": "Generated",
+			            "Weight": 0.99
+			          }
+			        }
+			      ]
+			    },
+			    "measure.briarport_rank_other_regions": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "*Measures",
+			          "ConceptualProperty": "BriarportRankOtherRegions"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "briarport rank other regions": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "BriarportRankOtherRegions": {
+			            "Type": "Noun",
+			            "State": "Generated",
+			            "Weight": 0.99
+			          }
+			        },
+			        {
+			          "briarport rank other province": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.514
+			          }
+			        },
+			        {
+			          "briarport rank other expanse": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.514
+			          }
+			        },
+			        {
+			          "briarport rank other constituency": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.514
+			          }
+			        },
+			        {
+			          "briarport rank other territory": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.514
+			          }
+			        },
+			        {
+			          "briarport rank other locality": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.514
+			          }
+			        },
+			        {
+			          "briarport rank other area": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.499
+			          }
+			        },
+			        {
+			          "briarport rank other district": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.499
+			          }
+			        },
+			        {
+			          "briarport rank other county": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.499
+			          }
+			        },
+			        {
+			          "briarport rank other section": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.499
+			          }
+			        },
+			        {
+			          "briarport rank other state": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.499
+			          }
+			        }
+			      ]
+			    },
+			    "measure.ten_year_ImproveDecline_AllMeasures": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "*Measures",
+			          "ConceptualProperty": "Ten Year ImproveDecline AllMeasures"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "ten year ImproveDecline AllMeasures": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "ten yr improvedecline allmeasure": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.617
+			          }
+			        }
+			      ]
+			    },
+			    "measure.max_value": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "*Measures",
+			          "ConceptualProperty": "MaxValue"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "max value": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "MaxValue": {
+			            "Type": "Noun",
+			            "State": "Generated",
+			            "Weight": 0.99
+			          }
+			        },
+			        {
+			          "maximum value": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.582
+			          }
+			        },
+			        {
+			          "max assessment": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.5
+			          }
+			        },
+			        {
+			          "max worth": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.485
+			          }
+			        },
+			        {
+			          "max price": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.485
+			          }
+			        },
+			        {
+			          "max cost": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.485
+			          }
+			        },
+			        {
+			          "max charge": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.485
+			          }
+			        },
+			        {
+			          "max rate": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.485
+			          }
+			        },
+			        {
+			          "max importance": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.475
+			          }
+			        },
+			        {
+			          "max significance": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.475
+			          }
+			        },
+			        {
+			          "max usefulness": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.475
+			          }
+			        }
+			      ]
+			    },
+			    "measure.min_value": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "*Measures",
+			          "ConceptualProperty": "MinValue"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "min value": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "MinValue": {
+			            "Type": "Noun",
+			            "State": "Generated",
+			            "Weight": 0.99
+			          }
+			        },
+			        {
+			          "minimum value": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.582
+			          }
+			        },
+			        {
+			          "min assessment": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.5
+			          }
+			        },
+			        {
+			          "min worth": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.485
+			          }
+			        },
+			        {
+			          "min price": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.485
+			          }
+			        },
+			        {
+			          "min cost": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.485
+			          }
+			        },
+			        {
+			          "min charge": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.485
+			          }
+			        },
+			        {
+			          "min rate": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.485
+			          }
+			        },
+			        {
+			          "min importance": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.475
+			          }
+			        },
+			        {
+			          "min significance": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.475
+			          }
+			        },
+			        {
+			          "min usefulness": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.475
+			          }
+			        }
+			      ]
+			    },
+			    "measure.ten_year__and_text": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "*Measures",
+			          "ConceptualProperty": "Ten Year % and text"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "ten year % and text": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "ten year % text": {
+			            "State": "Generated",
+			            "Weight": 0.97
+			          }
+			        },
+			        {
+			          "text": {
+			            "State": "Generated",
+			            "Weight": 0.97
+			          }
+			        },
+			        {
+			          "ten yr % and text": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.624
+			          }
+			        },
+			        {
+			          "ten year percentage and text": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.624
+			          }
+			        },
+			        {
+			          "ten yr % text": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.617
+			          }
+			        },
+			        {
+			          "ten year percentage text": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.617
+			          }
+			        },
+			        {
+			          "ten year pct and text": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.605
+			          }
+			        },
+			        {
+			          "ten year pct text": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.599
+			          }
+			        },
+			        {
+			          "ten year % and manuscript": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.52
+			          }
+			        },
+			        {
+			          "ten year % and transcript": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.52
+			          }
+			        },
+			        {
+			          "ten year % and typescript": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.52
+			          }
+			        },
+			        {
+			          "ten year % and edition": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.52
+			          }
+			        }
+			      ]
+			    },
+			    "region_ranking": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "RegionRankings"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "region ranking": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "RegionRankings": {
+			            "Type": "Noun",
+			            "State": "Generated",
+			            "Weight": 0.99
+			          }
+			        },
+			        {
+			          "ranking": {
+			            "State": "Generated",
+			            "Weight": 0.97
+			          }
+			        },
+			        {
+			          "location ranking": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.667
+			          }
+			        },
+			        {
+			          "province ranking": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.6
+			          }
+			        },
+			        {
+			          "area ranking": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.582
+			          }
+			        },
+			        {
+			          "district ranking": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.582
+			          }
+			        },
+			        {
+			          "section ranking": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.582
+			          }
+			        },
+			        {
+			          "zone ranking": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.582
+			          }
+			        },
+			        {
+			          "continent ranking": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.582
+			          }
+			        },
+			        {
+			          "region status": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.5
+			          }
+			        },
+			        {
+			          "region classification": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.5
+			          }
+			        },
+			        {
+			          "status": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.491
+			          }
+			        }
+			      ]
+			    },
+			    "region_ranking.average": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "RegionRankings",
+			          "ConceptualProperty": "Average"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "average": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "regular": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.476
+			          }
+			        },
+			        {
+			          "usual": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.476
+			          }
+			        },
+			        {
+			          "middling": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.476
+			          }
+			        },
+			        {
+			          "run-of-the-mill": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.476
+			          }
+			        },
+			        {
+			          "ordinary": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.476
+			          }
+			        },
+			        {
+			          "common": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.476
+			          }
+			        },
+			        {
+			          "standard": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.476
+			          }
+			        },
+			        {
+			          "mode": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.466
+			          }
+			        },
+			        {
+			          "norm": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.466
+			          }
+			        },
+			        {
+			          "mean": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.452
+			          }
+			        }
+			      ]
+			    },
+			    "region_ranking.rank": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "RegionRankings",
+			          "ConceptualProperty": "Rank"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "rank": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "flourishing": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.476
+			          }
+			        },
+			        {
+			          "sheer": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.452
+			          }
+			        },
+			        {
+			          "absolute": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.452
+			          }
+			        }
+			      ]
+			    },
+			    "region_ranking.region": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "RegionRankings",
+			          "ConceptualProperty": "Region"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "region": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "location": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.818
+			          }
+			        },
+			        {
+			          "province": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.736
+			          }
+			        },
+			        {
+			          "area": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.714
+			          }
+			        },
+			        {
+			          "district": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.714
+			          }
+			        },
+			        {
+			          "section": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.714
+			          }
+			        },
+			        {
+			          "zone": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.714
+			          }
+			        },
+			        {
+			          "continent": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.714
+			          }
+			        }
+			      ]
+			    },
+			    "region_ranking.attribute": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "RegionRankings",
+			          "ConceptualProperty": "Attribute"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "attribute": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "trait": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.491
+			          }
+			        },
+			        {
+			          "aspect": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.491
+			          }
+			        },
+			        {
+			          "element": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.491
+			          }
+			        },
+			        {
+			          "property": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.491
+			          }
+			        },
+			        {
+			          "quality": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.476
+			          }
+			        },
+			        {
+			          "characteristic": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.476
+			          }
+			        },
+			        {
+			          "feature": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.476
+			          }
+			        },
+			        {
+			          "point": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.476
+			          }
+			        },
+			        {
+			          "power": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.476
+			          }
+			        },
+			        {
+			          "part": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.476
+			          }
+			        }
+			      ]
+			    },
+			    "region_ranking.final_ranking": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "RegionRankings",
+			          "ConceptualProperty": "FinalRanking"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "final ranking": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "FinalRanking": {
+			            "Type": "Noun",
+			            "State": "Generated",
+			            "Weight": 0.99
+			          }
+			        },
+			        {
+			          "ranking": {
+			            "State": "Generated",
+			            "Weight": 0.97
+			          }
+			        },
+			        {
+			          "final status": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.5
+			          }
+			        },
+			        {
+			          "final classification": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.5
+			          }
+			        },
+			        {
+			          "status": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.491
+			          }
+			        },
+			        {
+			          "classification": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.491
+			          }
+			        },
+			        {
+			          "final position": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.485
+			          }
+			        },
+			        {
+			          "final place": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.485
+			          }
+			        },
+			        {
+			          "final grade": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.485
+			          }
+			        },
+			        {
+			          "final standing": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.485
+			          }
+			        },
+			        {
+			          "final level": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.485
+			          }
+			        },
+			        {
+			          "final rank": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.485
+			          }
+			        }
+			      ]
 			    }
 			  },
 			  "Relationships": {
+			    "region_ranking_has_average": {
+			      "Binding": {
+			        "ConceptualEntity": "RegionRankings"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "region_ranking": {
+			          "Target": {
+			            "Entity": "region_ranking"
+			          }
+			        },
+			        "region_ranking.average": {
+			          "Target": {
+			            "Entity": "region_ranking.average"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "region_ranking"
+			            },
+			            "Object": {
+			              "Role": "region_ranking.average"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "region_ranking_have_averages"
+			        }
+			      ]
+			    },
+			    "city_metrics_has_measure_ten_year__and_text": {
+			      "Binding": {
+			        "ConceptualEntity": "City Metrics"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "city_metrics": {
+			          "Target": {
+			            "Entity": "city_metrics"
+			          }
+			        },
+			        "measure.ten_year__and_text": {
+			          "Target": {
+			            "Entity": "measure.ten_year__and_text"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "city_metrics"
+			            },
+			            "Object": {
+			              "Role": "measure.ten_year__and_text"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "city_metrics_have_ten_year__and_text"
+			        }
+			      ]
+			    },
+			    "city_metrics_has_measure_min_value": {
+			      "Binding": {
+			        "ConceptualEntity": "City Metrics"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "city_metrics": {
+			          "Target": {
+			            "Entity": "city_metrics"
+			          }
+			        },
+			        "measure.min_value": {
+			          "Target": {
+			            "Entity": "measure.min_value"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "city_metrics"
+			            },
+			            "Object": {
+			              "Role": "measure.min_value"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "city_metrics_have_min_value"
+			        }
+			      ]
+			    },
+			    "city_metrics_has_measure_max_value": {
+			      "Binding": {
+			        "ConceptualEntity": "City Metrics"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "city_metrics": {
+			          "Target": {
+			            "Entity": "city_metrics"
+			          }
+			        },
+			        "measure.max_value": {
+			          "Target": {
+			            "Entity": "measure.max_value"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "city_metrics"
+			            },
+			            "Object": {
+			              "Role": "measure.max_value"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "city_metrics_have_max_value"
+			        }
+			      ]
+			    },
+			    "city_metrics_has_measure_ten_year_ImproveDecline_AllMeasures": {
+			      "Binding": {
+			        "ConceptualEntity": "City Metrics"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "city_metrics": {
+			          "Target": {
+			            "Entity": "city_metrics"
+			          }
+			        },
+			        "measure.ten_year_ImproveDecline_AllMeasures": {
+			          "Target": {
+			            "Entity": "measure.ten_year_ImproveDecline_AllMeasures"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "city_metrics"
+			            },
+			            "Object": {
+			              "Role": "measure.ten_year_ImproveDecline_AllMeasures"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "city_metrics_have_ten_year_ImproveDecline_AllMeasures"
+			        }
+			      ]
+			    },
+			    "city_metrics_has_measure_briarport_rank_other_regions": {
+			      "Binding": {
+			        "ConceptualEntity": "City Metrics"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "city_metrics": {
+			          "Target": {
+			            "Entity": "city_metrics"
+			          }
+			        },
+			        "measure.briarport_rank_other_regions": {
+			          "Target": {
+			            "Entity": "measure.briarport_rank_other_regions"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "city_metrics"
+			            },
+			            "Object": {
+			              "Role": "measure.briarport_rank_other_regions"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "city_metrics_have_briarport_rank_other_regions"
+			        }
+			      ]
+			    },
+			    "measure_has_briarport_rank": {
+			      "Binding": {
+			        "ConceptualEntity": "*Measures"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "measure": {
+			          "Target": {
+			            "Entity": "measure"
+			          }
+			        },
+			        "measure.briarport_rank": {
+			          "Target": {
+			            "Entity": "measure.briarport_rank"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "measure"
+			            },
+			            "Object": {
+			              "Role": "measure.briarport_rank"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "measures_have_briarport_rank"
+			        }
+			      ]
+			    },
+			    "measure_has_south_rank": {
+			      "Binding": {
+			        "ConceptualEntity": "*Measures"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "measure": {
+			          "Target": {
+			            "Entity": "measure"
+			          }
+			        },
+			        "measure.south_rank": {
+			          "Target": {
+			            "Entity": "measure.south_rank"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "measure"
+			            },
+			            "Object": {
+			              "Role": "measure.south_rank"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "measures_have_south_rank"
+			        }
+			      ]
+			    },
+			    "city_metrics_has_measure_ten_year_difference_header": {
+			      "Binding": {
+			        "ConceptualEntity": "City Metrics"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "city_metrics": {
+			          "Target": {
+			            "Entity": "city_metrics"
+			          }
+			        },
+			        "measure.ten_year_difference_header": {
+			          "Target": {
+			            "Entity": "measure.ten_year_difference_header"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "city_metrics"
+			            },
+			            "Object": {
+			              "Role": "measure.ten_year_difference_header"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "city_metrics_have_ten_year_difference_header"
+			        },
+			        {
+			          "Verb": {
+			            "Subject": {
+			              "Role": "measure.ten_year_difference_header"
+			            },
+			            "Verbs": [
+			              {
+			                "head": {
+			                  "State": "Generated"
+			                }
+			              }
+			            ],
+			            "Object": {
+			              "Role": "city_metrics"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.75,
+			          "ID": "ten_year_difference_header_head_city_metrics"
+			        },
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "measure.ten_year_difference_header"
+			            },
+			            "Object": {
+			              "Role": "city_metrics"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "ten_year_difference_header_have_city_metrics"
+			        }
+			      ]
+			    },
+			    "metric_renaming_has_attribute_header_name": {
+			      "Binding": {
+			        "ConceptualEntity": "Metric Renaming"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "metric_renaming": {
+			          "Target": {
+			            "Entity": "metric_renaming"
+			          }
+			        },
+			        "metric_renaming.attribute_header_name": {
+			          "Target": {
+			            "Entity": "metric_renaming.attribute_header_name"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "metric_renaming"
+			            },
+			            "Object": {
+			              "Role": "metric_renaming.attribute_header_name"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "metric_renaming_have_attribute_header_names"
+			        },
+			        {
+			          "Verb": {
+			            "Subject": {
+			              "Role": "metric_renaming.attribute_header_name"
+			            },
+			            "Verbs": [
+			              {
+			                "head": {
+			                  "State": "Generated"
+			                }
+			              }
+			            ],
+			            "Object": {
+			              "Role": "metric_renaming"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.75,
+			          "ID": "attribute_header_names_head_metric_renaming"
+			        },
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "metric_renaming.attribute_header_name"
+			            },
+			            "Object": {
+			              "Role": "metric_renaming"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "attribute_header_names_have_metric_renaming"
+			        }
+			      ]
+			    },
+			    "metric_renaming_has_attribute_slicer_name": {
+			      "Binding": {
+			        "ConceptualEntity": "Metric Renaming"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "metric_renaming": {
+			          "Target": {
+			            "Entity": "metric_renaming"
+			          }
+			        },
+			        "metric_renaming.attribute_slicer_name": {
+			          "Target": {
+			            "Entity": "metric_renaming.attribute_slicer_name"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "metric_renaming"
+			            },
+			            "Object": {
+			              "Role": "metric_renaming.attribute_slicer_name"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "metric_renaming_have_attribute_slicer_names"
+			        },
+			        {
+			          "Verb": {
+			            "Subject": {
+			              "Role": "metric_renaming.attribute_slicer_name"
+			            },
+			            "Verbs": [
+			              {
+			                "slice": {
+			                  "State": "Generated"
+			                }
+			              }
+			            ],
+			            "Object": {
+			              "Role": "metric_renaming"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.75,
+			          "ID": "attribute_slicer_names_slice_metric_renaming"
+			        },
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "metric_renaming.attribute_slicer_name"
+			            },
+			            "Object": {
+			              "Role": "metric_renaming"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "attribute_slicer_names_have_metric_renaming"
+			        }
+			      ]
+			    },
+			    "metric_renaming_has_attribute": {
+			      "Binding": {
+			        "ConceptualEntity": "Metric Renaming"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "metric_renaming": {
+			          "Target": {
+			            "Entity": "metric_renaming"
+			          }
+			        },
+			        "metric_renaming.attribute": {
+			          "Target": {
+			            "Entity": "metric_renaming.attribute"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "metric_renaming"
+			            },
+			            "Object": {
+			              "Role": "metric_renaming.attribute"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "metric_renaming_have_attributes"
+			        }
+			      ]
+			    },
+			    "city_metrics_has_measure_ten_year_difference_bar_chart": {
+			      "Binding": {
+			        "ConceptualEntity": "City Metrics"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "city_metrics": {
+			          "Target": {
+			            "Entity": "city_metrics"
+			          }
+			        },
+			        "measure.ten_year_difference_bar_chart": {
+			          "Target": {
+			            "Entity": "measure.ten_year_difference_bar_chart"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "city_metrics"
+			            },
+			            "Object": {
+			              "Role": "measure.ten_year_difference_bar_chart"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "city_metrics_have_ten_year_difference_bar_chart"
+			        }
+			      ]
+			    },
+			    "city_metrics_has_measure_ImproveDecline_color": {
+			      "Binding": {
+			        "ConceptualEntity": "City Metrics"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "city_metrics": {
+			          "Target": {
+			            "Entity": "city_metrics"
+			          }
+			        },
+			        "measure.ImproveDecline_color": {
+			          "Target": {
+			            "Entity": "measure.ImproveDecline_color"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "city_metrics"
+			            },
+			            "Object": {
+			              "Role": "measure.ImproveDecline_color"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "city_metrics_have_ImproveDecline_color"
+			        }
+			      ]
+			    },
+			    "city_metrics_has_measure_ten_year_": {
+			      "Binding": {
+			        "ConceptualEntity": "City Metrics"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "city_metrics": {
+			          "Target": {
+			            "Entity": "city_metrics"
+			          }
+			        },
+			        "measure.ten_year_": {
+			          "Target": {
+			            "Entity": "measure.ten_year_"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "city_metrics"
+			            },
+			            "Object": {
+			              "Role": "measure.ten_year_"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "city_metrics_have_ten_year_"
+			        }
+			      ]
+			    },
+			    "city_metrics_has_measure_ten_year_ImproveDecline": {
+			      "Binding": {
+			        "ConceptualEntity": "City Metrics"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "city_metrics": {
+			          "Target": {
+			            "Entity": "city_metrics"
+			          }
+			        },
+			        "measure.ten_year_ImproveDecline": {
+			          "Target": {
+			            "Entity": "measure.ten_year_ImproveDecline"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "city_metrics"
+			            },
+			            "Object": {
+			              "Role": "measure.ten_year_ImproveDecline"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "city_metrics_have_ten_year_ImproveDecline"
+			        }
+			      ]
+			    },
+			    "city_metrics_has_measure_briarport_only_value": {
+			      "Binding": {
+			        "ConceptualEntity": "City Metrics"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "city_metrics": {
+			          "Target": {
+			            "Entity": "city_metrics"
+			          }
+			        },
+			        "measure.briarport_only_value": {
+			          "Target": {
+			            "Entity": "measure.briarport_only_value"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "city_metrics"
+			            },
+			            "Object": {
+			              "Role": "measure.briarport_only_value"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "city_metrics_have_briarport_only_value"
+			        }
+			      ]
+			    },
+			    "city_metrics_has_measure_average": {
+			      "Binding": {
+			        "ConceptualEntity": "City Metrics"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "city_metrics": {
+			          "Target": {
+			            "Entity": "city_metrics"
+			          }
+			        },
+			        "measure.average": {
+			          "Target": {
+			            "Entity": "measure.average"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "city_metrics"
+			            },
+			            "Object": {
+			              "Role": "measure.average"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "city_metrics_have_average"
+			        }
+			      ]
+			    },
+			    "city_metrics_has_measure_ten_year_difference_briarport": {
+			      "Binding": {
+			        "ConceptualEntity": "City Metrics"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "city_metrics": {
+			          "Target": {
+			            "Entity": "city_metrics"
+			          }
+			        },
+			        "measure.ten_year_difference_briarport": {
+			          "Target": {
+			            "Entity": "measure.ten_year_difference_briarport"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "city_metrics"
+			            },
+			            "Object": {
+			              "Role": "measure.ten_year_difference_briarport"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "city_metrics_have_ten_year_difference_briarport"
+			        }
+			      ]
+			    },
+			    "city_metrics_has_attribute_header_name": {
+			      "Binding": {
+			        "ConceptualEntity": "City Metrics"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "city_metrics": {
+			          "Target": {
+			            "Entity": "city_metrics"
+			          }
+			        },
+			        "city_metrics.attribute_header_name": {
+			          "Target": {
+			            "Entity": "city_metrics.attribute_header_name"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "city_metrics"
+			            },
+			            "Object": {
+			              "Role": "city_metrics.attribute_header_name"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "city_metrics_have_attribute_header_names"
+			        },
+			        {
+			          "Verb": {
+			            "Subject": {
+			              "Role": "city_metrics.attribute_header_name"
+			            },
+			            "Verbs": [
+			              {
+			                "head": {
+			                  "State": "Generated"
+			                }
+			              }
+			            ],
+			            "Object": {
+			              "Role": "city_metrics"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.75,
+			          "ID": "attribute_header_names_head_city_metrics"
+			        },
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "city_metrics.attribute_header_name"
+			            },
+			            "Object": {
+			              "Role": "city_metrics"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "attribute_header_names_have_city_metrics"
+			        }
+			      ]
+			    },
+			    "city_metrics_has_attribute_slicer_name": {
+			      "Binding": {
+			        "ConceptualEntity": "City Metrics"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "city_metrics": {
+			          "Target": {
+			            "Entity": "city_metrics"
+			          }
+			        },
+			        "city_metrics.attribute_slicer_name": {
+			          "Target": {
+			            "Entity": "city_metrics.attribute_slicer_name"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "city_metrics"
+			            },
+			            "Object": {
+			              "Role": "city_metrics.attribute_slicer_name"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "city_metrics_have_attribute_slicer_names"
+			        },
+			        {
+			          "Verb": {
+			            "Subject": {
+			              "Role": "city_metrics.attribute_slicer_name"
+			            },
+			            "Verbs": [
+			              {
+			                "slice": {
+			                  "State": "Generated"
+			                }
+			              }
+			            ],
+			            "Object": {
+			              "Role": "city_metrics"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.75,
+			          "ID": "attribute_slicer_names_slice_city_metrics"
+			        },
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "city_metrics.attribute_slicer_name"
+			            },
+			            "Object": {
+			              "Role": "city_metrics"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "attribute_slicer_names_have_city_metrics"
+			        }
+			      ]
+			    },
+			    "city_metrics_BP_all_region_has_region_rank": {
+			      "Binding": {
+			        "ConceptualEntity": "City Metrics BP All Regions"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "city_metrics_BP_all_region": {
+			          "Target": {
+			            "Entity": "city_metrics_BP_all_region"
+			          }
+			        },
+			        "city_metrics_BP_all_region.region_rank": {
+			          "Target": {
+			            "Entity": "city_metrics_BP_all_region.region_rank"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "city_metrics_BP_all_region"
+			            },
+			            "Object": {
+			              "Role": "city_metrics_BP_all_region.region_rank"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "city_metrics_BP_all_regions_have_region_ranks"
+			        }
+			      ]
+			    },
+			    "city_metrics_BP_all_region_has_region": {
+			      "Binding": {
+			        "ConceptualEntity": "City Metrics BP All Regions"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "city_metrics_BP_all_region": {
+			          "Target": {
+			            "Entity": "city_metrics_BP_all_region"
+			          }
+			        },
+			        "city_metrics_BP_all_region.region": {
+			          "Target": {
+			            "Entity": "city_metrics_BP_all_region.region"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "city_metrics_BP_all_region"
+			            },
+			            "Object": {
+			              "Role": "city_metrics_BP_all_region.region"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "city_metrics_BP_all_regions_have_regions"
+			        }
+			      ]
+			    },
+			    "city_metrics_BP_all_region_has_attribute_order": {
+			      "Binding": {
+			        "ConceptualEntity": "City Metrics BP All Regions"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "city_metrics_BP_all_region": {
+			          "Target": {
+			            "Entity": "city_metrics_BP_all_region"
+			          }
+			        },
+			        "city_metrics_BP_all_region.attribute_order": {
+			          "Target": {
+			            "Entity": "city_metrics_BP_all_region.attribute_order"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "city_metrics_BP_all_region"
+			            },
+			            "Object": {
+			              "Role": "city_metrics_BP_all_region.attribute_order"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "city_metrics_BP_all_regions_have_attribute_orders"
+			        }
+			      ]
+			    },
+			    "city_metrics_BP_all_region_has_rank": {
+			      "Binding": {
+			        "ConceptualEntity": "City Metrics BP All Regions"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "city_metrics_BP_all_region": {
+			          "Target": {
+			            "Entity": "city_metrics_BP_all_region"
+			          }
+			        },
+			        "city_metrics_BP_all_region.rank": {
+			          "Target": {
+			            "Entity": "city_metrics_BP_all_region.rank"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "city_metrics_BP_all_region"
+			            },
+			            "Object": {
+			              "Role": "city_metrics_BP_all_region.rank"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "city_metrics_BP_all_regions_have_ranks"
+			        }
+			      ]
+			    },
+			    "city_metrics_BP_all_region_has_value_for_grouping": {
+			      "Binding": {
+			        "ConceptualEntity": "City Metrics BP All Regions"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "city_metrics_BP_all_region": {
+			          "Target": {
+			            "Entity": "city_metrics_BP_all_region"
+			          }
+			        },
+			        "city_metrics_BP_all_region.value_for_grouping": {
+			          "Target": {
+			            "Entity": "city_metrics_BP_all_region.value_for_grouping"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "city_metrics_BP_all_region"
+			            },
+			            "Object": {
+			              "Role": "city_metrics_BP_all_region.value_for_grouping"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "city_metrics_BP_all_regions_have_value_for_grouping"
+			        }
+			      ]
+			    },
+			    "city_metrics_BP_all_region_has_value": {
+			      "Binding": {
+			        "ConceptualEntity": "City Metrics BP All Regions"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "city_metrics_BP_all_region": {
+			          "Target": {
+			            "Entity": "city_metrics_BP_all_region"
+			          }
+			        },
+			        "city_metrics_BP_all_region.value": {
+			          "Target": {
+			            "Entity": "city_metrics_BP_all_region.value"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "city_metrics_BP_all_region"
+			            },
+			            "Object": {
+			              "Role": "city_metrics_BP_all_region.value"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "city_metrics_BP_all_regions_have_values"
+			        }
+			      ]
+			    },
+			    "city_metrics_BP_all_region_has_year": {
+			      "Binding": {
+			        "ConceptualEntity": "City Metrics BP All Regions"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "city_metrics_BP_all_region": {
+			          "Target": {
+			            "Entity": "city_metrics_BP_all_region"
+			          }
+			        },
+			        "city_metrics_BP_all_region.year": {
+			          "Target": {
+			            "Entity": "city_metrics_BP_all_region.year"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "city_metrics_BP_all_region"
+			            },
+			            "Object": {
+			              "Role": "city_metrics_BP_all_region.year"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "city_metrics_BP_all_regions_have_years"
+			        }
+			      ]
+			    },
+			    "city_metrics_BP_all_region_has_city": {
+			      "Binding": {
+			        "ConceptualEntity": "City Metrics BP All Regions"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "city_metrics_BP_all_region": {
+			          "Target": {
+			            "Entity": "city_metrics_BP_all_region"
+			          }
+			        },
+			        "city_metrics_BP_all_region.city": {
+			          "Target": {
+			            "Entity": "city_metrics_BP_all_region.city"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "city_metrics_BP_all_region"
+			            },
+			            "Object": {
+			              "Role": "city_metrics_BP_all_region.city"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "city_metrics_BP_all_regions_have_cities"
+			        }
+			      ]
+			    },
+			    "city_metrics_has_measure_briarport_value": {
+			      "Binding": {
+			        "ConceptualEntity": "City Metrics"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "city_metrics": {
+			          "Target": {
+			            "Entity": "city_metrics"
+			          }
+			        },
+			        "measure.briarport_value": {
+			          "Target": {
+			            "Entity": "measure.briarport_value"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "city_metrics"
+			            },
+			            "Object": {
+			              "Role": "measure.briarport_value"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "city_metrics_have_briarport_value"
+			        }
+			      ]
+			    },
+			    "city_metrics_has_measure_YoY_value": {
+			      "Binding": {
+			        "ConceptualEntity": "City Metrics"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "city_metrics": {
+			          "Target": {
+			            "Entity": "city_metrics"
+			          }
+			        },
+			        "measure.YoY_value": {
+			          "Target": {
+			            "Entity": "measure.YoY_value"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "city_metrics"
+			            },
+			            "Object": {
+			              "Role": "measure.YoY_value"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "city_metrics_have_YoY_value"
+			        }
+			      ]
+			    },
+			    "city_metrics_has_measure_rank__value": {
+			      "Binding": {
+			        "ConceptualEntity": "City Metrics"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "city_metrics": {
+			          "Target": {
+			            "Entity": "city_metrics"
+			          }
+			        },
+			        "measure.rank__value": {
+			          "Target": {
+			            "Entity": "measure.rank__value"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "city_metrics"
+			            },
+			            "Object": {
+			              "Role": "measure.rank__value"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "city_metrics_have_rank__value"
+			        }
+			      ]
+			    },
+			    "city_metrics_has_measure_latest_value": {
+			      "Binding": {
+			        "ConceptualEntity": "City Metrics"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "city_metrics": {
+			          "Target": {
+			            "Entity": "city_metrics"
+			          }
+			        },
+			        "measure.latest_value": {
+			          "Target": {
+			            "Entity": "measure.latest_value"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "city_metrics"
+			            },
+			            "Object": {
+			              "Role": "measure.latest_value"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "city_metrics_have_latest_value"
+			        }
+			      ]
+			    },
+			    "city_metrics_has_measure_rank_YoY": {
+			      "Binding": {
+			        "ConceptualEntity": "City Metrics"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "city_metrics": {
+			          "Target": {
+			            "Entity": "city_metrics"
+			          }
+			        },
+			        "measure.rank_YoY": {
+			          "Target": {
+			            "Entity": "measure.rank_YoY"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "city_metrics"
+			            },
+			            "Object": {
+			              "Role": "measure.rank_YoY"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "city_metrics_have_rank_YoY"
+			        }
+			      ]
+			    },
+			    "parameter_has_parameter": {
+			      "Binding": {
+			        "ConceptualEntity": "Parameter"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "parameter": {
+			          "Target": {
+			            "Entity": "parameter"
+			          }
+			        },
+			        "parameter.parameter": {
+			          "Target": {
+			            "Entity": "parameter.parameter"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "parameter"
+			            },
+			            "Object": {
+			              "Role": "parameter.parameter"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "parameters_have_parameters"
+			        },
+			        {
+			          "Name": {
+			            "Subject": {
+			              "Role": "parameter"
+			            },
+			            "Name": {
+			              "Role": "parameter.parameter"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "parameters_are_names_IDs_of_parameters"
+			        }
+			      ]
+			    },
+			    "city_metrics_has_measure_latest_rank": {
+			      "Binding": {
+			        "ConceptualEntity": "City Metrics"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "city_metrics": {
+			          "Target": {
+			            "Entity": "city_metrics"
+			          }
+			        },
+			        "measure.latest_rank": {
+			          "Target": {
+			            "Entity": "measure.latest_rank"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "city_metrics"
+			            },
+			            "Object": {
+			              "Role": "measure.latest_rank"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "city_metrics_have_latest_rank"
+			        }
+			      ]
+			    },
+			    "city_metrics_has_measure_region_rank": {
+			      "Binding": {
+			        "ConceptualEntity": "City Metrics"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "city_metrics": {
+			          "Target": {
+			            "Entity": "city_metrics"
+			          }
+			        },
+			        "measure.region_rank": {
+			          "Target": {
+			            "Entity": "measure.region_rank"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "city_metrics"
+			            },
+			            "Object": {
+			              "Role": "measure.region_rank"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "city_metrics_have_region_rank"
+			        }
+			      ]
+			    },
 			    "city_metrics_has_measure_rank": {
 			      "Binding": {
 			        "ConceptualEntity": "City Metrics"
@@ -3863,39 +7807,6 @@ cultureInfo en-US
 			        }
 			      ]
 			    },
-			    "city_metrics_has_attribute": {
-			      "Binding": {
-			        "ConceptualEntity": "City Metrics"
-			      },
-			      "State": "Generated",
-			      "Roles": {
-			        "city_metrics": {
-			          "Target": {
-			            "Entity": "city_metrics"
-			          }
-			        },
-			        "city_metrics.attribute": {
-			          "Target": {
-			            "Entity": "city_metrics.attribute"
-			          }
-			        }
-			      },
-			      "Phrasings": [
-			        {
-			          "Attribute": {
-			            "Subject": {
-			              "Role": "city_metrics"
-			            },
-			            "Object": {
-			              "Role": "city_metrics.attribute"
-			            }
-			          },
-			          "State": "Generated",
-			          "Weight": 0.99,
-			          "ID": "city_metrics_have_attributes"
-			        }
-			      ]
-			    },
 			    "city_metrics_has_year": {
 			      "Binding": {
 			        "ConceptualEntity": "City Metrics"
@@ -4094,51 +8005,6 @@ cultureInfo en-US
 			        }
 			      ]
 			    },
-			    "city_metrics_BP_all_region_in_city_lookup": {
-			      "Binding": {
-			        "ConceptualEntity": "City Metrics BP All Regions"
-			      },
-			      "State": "Generated",
-			      "Roles": {
-			        "city_metrics_BP_all_region": {
-			          "Target": {
-			            "Entity": "city_metrics_BP_all_region"
-			          }
-			        },
-			        "city_lookup": {
-			          "Target": {
-			            "Entity": "city_lookup"
-			          }
-			        }
-			      },
-			      "SemanticSlots": {
-			        "Where": {
-			          "Role": "city_lookup"
-			        }
-			      },
-			      "Phrasings": [
-			        {
-			          "Preposition": {
-			            "Subject": {
-			              "Role": "city_metrics_BP_all_region"
-			            },
-			            "Prepositions": [
-			              {
-			                "in": {
-			                  "State": "Generated"
-			                }
-			              }
-			            ],
-			            "Object": {
-			              "Role": "city_lookup"
-			            }
-			          },
-			          "State": "Generated",
-			          "Weight": 0.99,
-			          "ID": "city_metrics_BP_all_regions_are_in_city_lookups"
-			        }
-			      ]
-			    },
 			    "city_metrics_in_city_lookup": {
 			      "Binding": {
 			        "ConceptualEntity": "City Metrics"
@@ -4184,6 +8050,96 @@ cultureInfo en-US
 			        }
 			      ]
 			    },
+			    "region_ranking_in_region": {
+			      "Binding": {
+			        "ConceptualEntity": "RegionRankings"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "region_ranking": {
+			          "Target": {
+			            "Entity": "region_ranking"
+			          }
+			        },
+			        "region_ranking.region": {
+			          "Target": {
+			            "Entity": "region_ranking.region"
+			          }
+			        }
+			      },
+			      "SemanticSlots": {
+			        "Where": {
+			          "Role": "region_ranking.region"
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Preposition": {
+			            "Subject": {
+			              "Role": "region_ranking"
+			            },
+			            "Prepositions": [
+			              {
+			                "in": {
+			                  "State": "Generated"
+			                }
+			              }
+			            ],
+			            "Object": {
+			              "Role": "region_ranking.region"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "region_ranking_are_in_regions"
+			        }
+			      ]
+			    },
+			    "city_metrics_in_measure_briarport_rank_other_regions": {
+			      "Binding": {
+			        "ConceptualEntity": "City Metrics"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "city_metrics": {
+			          "Target": {
+			            "Entity": "city_metrics"
+			          }
+			        },
+			        "measure.briarport_rank_other_regions": {
+			          "Target": {
+			            "Entity": "measure.briarport_rank_other_regions"
+			          }
+			        }
+			      },
+			      "SemanticSlots": {
+			        "Where": {
+			          "Role": "measure.briarport_rank_other_regions"
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Preposition": {
+			            "Subject": {
+			              "Role": "city_metrics"
+			            },
+			            "Prepositions": [
+			              {
+			                "in": {
+			                  "State": "Generated"
+			                }
+			              }
+			            ],
+			            "Object": {
+			              "Role": "measure.briarport_rank_other_regions"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "city_metrics_are_in_briarport_rank_other_regions"
+			        }
+			      ]
+			    },
 			    "city_metrics_BP_all_region_in_region": {
 			      "Binding": {
 			        "ConceptualEntity": "City Metrics BP All Regions"
@@ -4226,6 +8182,51 @@ cultureInfo en-US
 			          "State": "Generated",
 			          "Weight": 0.99,
 			          "ID": "city_metrics_BP_all_regions_are_in_regions"
+			        }
+			      ]
+			    },
+			    "city_metrics_BP_all_region_in_city": {
+			      "Binding": {
+			        "ConceptualEntity": "City Metrics BP All Regions"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "city_metrics_BP_all_region": {
+			          "Target": {
+			            "Entity": "city_metrics_BP_all_region"
+			          }
+			        },
+			        "city_metrics_BP_all_region.city": {
+			          "Target": {
+			            "Entity": "city_metrics_BP_all_region.city"
+			          }
+			        }
+			      },
+			      "SemanticSlots": {
+			        "Where": {
+			          "Role": "city_metrics_BP_all_region.city"
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Preposition": {
+			            "Subject": {
+			              "Role": "city_metrics_BP_all_region"
+			            },
+			            "Prepositions": [
+			              {
+			                "in": {
+			                  "State": "Generated"
+			                }
+			              }
+			            ],
+			            "Object": {
+			              "Role": "city_metrics_BP_all_region.city"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "city_metrics_BP_all_regions_are_in_cities"
 			        }
 			      ]
 			    },
@@ -4454,66 +8455,53 @@ cultureInfo en-US
 			        }
 			      ]
 			    },
-			    "parameter_is_named_parameter": {
+			    "region_ranking_has_rank": {
 			      "Binding": {
-			        "ConceptualEntity": "Parameter"
+			        "ConceptualEntity": "RegionRankings"
 			      },
 			      "State": "Generated",
 			      "Roles": {
-			        "parameter": {
+			        "region_ranking": {
 			          "Target": {
-			            "Entity": "parameter"
+			            "Entity": "region_ranking"
 			          }
 			        },
-			        "parameter.parameter": {
+			        "region_ranking.rank": {
 			          "Target": {
-			            "Entity": "parameter.parameter"
+			            "Entity": "region_ranking.rank"
 			          }
 			        }
 			      },
 			      "Phrasings": [
 			        {
-			          "Name": {
-			            "Subject": {
-			              "Role": "parameter"
-			            },
-			            "Name": {
-			              "Role": "parameter.parameter"
-			            }
-			          },
-			          "State": "Generated",
-			          "Weight": 0.99,
-			          "ID": "parameters_are_names_IDs_of_parameters"
-			        },
-			        {
 			          "Attribute": {
 			            "Subject": {
-			              "Role": "parameter"
+			              "Role": "region_ranking"
 			            },
 			            "Object": {
-			              "Role": "parameter.parameter"
+			              "Role": "region_ranking.rank"
 			            }
 			          },
 			          "State": "Generated",
 			          "Weight": 0.99,
-			          "ID": "parameters_have_parameters"
+			          "ID": "region_ranking_have_ranks"
 			        }
 			      ]
 			    },
-			    "city_metrics_has_measure_region_rank": {
+			    "region_ranking_has_region": {
 			      "Binding": {
-			        "ConceptualEntity": "City Metrics"
+			        "ConceptualEntity": "RegionRankings"
 			      },
 			      "State": "Generated",
 			      "Roles": {
-			        "city_metrics": {
+			        "region_ranking": {
 			          "Target": {
-			            "Entity": "city_metrics"
+			            "Entity": "region_ranking"
 			          }
 			        },
-			        "measure.region_rank": {
+			        "region_ranking.region": {
 			          "Target": {
-			            "Entity": "measure.region_rank"
+			            "Entity": "region_ranking.region"
 			          }
 			        }
 			      },
@@ -4521,32 +8509,32 @@ cultureInfo en-US
 			        {
 			          "Attribute": {
 			            "Subject": {
-			              "Role": "city_metrics"
+			              "Role": "region_ranking"
 			            },
 			            "Object": {
-			              "Role": "measure.region_rank"
+			              "Role": "region_ranking.region"
 			            }
 			          },
 			          "State": "Generated",
 			          "Weight": 0.99,
-			          "ID": "city_metrics_have_region_rank"
+			          "ID": "region_ranking_have_regions"
 			        }
 			      ]
 			    },
-			    "city_metrics_has_measure_latest_rank": {
+			    "region_ranking_has_attribute": {
 			      "Binding": {
-			        "ConceptualEntity": "City Metrics"
+			        "ConceptualEntity": "RegionRankings"
 			      },
 			      "State": "Generated",
 			      "Roles": {
-			        "city_metrics": {
+			        "region_ranking": {
 			          "Target": {
-			            "Entity": "city_metrics"
+			            "Entity": "region_ranking"
 			          }
 			        },
-			        "measure.latest_rank": {
+			        "region_ranking.attribute": {
 			          "Target": {
-			            "Entity": "measure.latest_rank"
+			            "Entity": "region_ranking.attribute"
 			          }
 			        }
 			      },
@@ -4554,32 +8542,32 @@ cultureInfo en-US
 			        {
 			          "Attribute": {
 			            "Subject": {
-			              "Role": "city_metrics"
+			              "Role": "region_ranking"
 			            },
 			            "Object": {
-			              "Role": "measure.latest_rank"
+			              "Role": "region_ranking.attribute"
 			            }
 			          },
 			          "State": "Generated",
 			          "Weight": 0.99,
-			          "ID": "city_metrics_have_latest_rank"
+			          "ID": "region_ranking_have_attributes"
 			        }
 			      ]
 			    },
-			    "city_metrics_has_measure_rank_YoY": {
+			    "region_ranking_has_final_ranking": {
 			      "Binding": {
-			        "ConceptualEntity": "City Metrics"
+			        "ConceptualEntity": "RegionRankings"
 			      },
 			      "State": "Generated",
 			      "Roles": {
-			        "city_metrics": {
+			        "region_ranking": {
 			          "Target": {
-			            "Entity": "city_metrics"
+			            "Entity": "region_ranking"
 			          }
 			        },
-			        "measure.rank_YoY": {
+			        "region_ranking.final_ranking": {
 			          "Target": {
-			            "Entity": "measure.rank_YoY"
+			            "Entity": "region_ranking.final_ranking"
 			          }
 			        }
 			      },
@@ -4587,411 +8575,15 @@ cultureInfo en-US
 			        {
 			          "Attribute": {
 			            "Subject": {
-			              "Role": "city_metrics"
+			              "Role": "region_ranking"
 			            },
 			            "Object": {
-			              "Role": "measure.rank_YoY"
+			              "Role": "region_ranking.final_ranking"
 			            }
 			          },
 			          "State": "Generated",
 			          "Weight": 0.99,
-			          "ID": "city_metrics_have_rank_YoY"
-			        }
-			      ]
-			    },
-			    "city_metrics_has_measure_latest_value": {
-			      "Binding": {
-			        "ConceptualEntity": "City Metrics"
-			      },
-			      "State": "Generated",
-			      "Roles": {
-			        "city_metrics": {
-			          "Target": {
-			            "Entity": "city_metrics"
-			          }
-			        },
-			        "measure.latest_value": {
-			          "Target": {
-			            "Entity": "measure.latest_value"
-			          }
-			        }
-			      },
-			      "Phrasings": [
-			        {
-			          "Attribute": {
-			            "Subject": {
-			              "Role": "city_metrics"
-			            },
-			            "Object": {
-			              "Role": "measure.latest_value"
-			            }
-			          },
-			          "State": "Generated",
-			          "Weight": 0.99,
-			          "ID": "city_metrics_have_latest_value"
-			        }
-			      ]
-			    },
-			    "city_metrics_has_measure_rank__value": {
-			      "Binding": {
-			        "ConceptualEntity": "City Metrics"
-			      },
-			      "State": "Generated",
-			      "Roles": {
-			        "city_metrics": {
-			          "Target": {
-			            "Entity": "city_metrics"
-			          }
-			        },
-			        "measure.rank__value": {
-			          "Target": {
-			            "Entity": "measure.rank__value"
-			          }
-			        }
-			      },
-			      "Phrasings": [
-			        {
-			          "Attribute": {
-			            "Subject": {
-			              "Role": "city_metrics"
-			            },
-			            "Object": {
-			              "Role": "measure.rank__value"
-			            }
-			          },
-			          "State": "Generated",
-			          "Weight": 0.99,
-			          "ID": "city_metrics_have_rank__value"
-			        }
-			      ]
-			    },
-			    "city_metrics_has_measure_YoY_value": {
-			      "Binding": {
-			        "ConceptualEntity": "City Metrics"
-			      },
-			      "State": "Generated",
-			      "Roles": {
-			        "city_metrics": {
-			          "Target": {
-			            "Entity": "city_metrics"
-			          }
-			        },
-			        "measure.YoY_value": {
-			          "Target": {
-			            "Entity": "measure.YoY_value"
-			          }
-			        }
-			      },
-			      "Phrasings": [
-			        {
-			          "Attribute": {
-			            "Subject": {
-			              "Role": "city_metrics"
-			            },
-			            "Object": {
-			              "Role": "measure.YoY_value"
-			            }
-			          },
-			          "State": "Generated",
-			          "Weight": 0.99,
-			          "ID": "city_metrics_have_YoY_value"
-			        }
-			      ]
-			    },
-			    "city_metrics_has_measure_briarport_value": {
-			      "Binding": {
-			        "ConceptualEntity": "City Metrics"
-			      },
-			      "State": "Generated",
-			      "Roles": {
-			        "city_metrics": {
-			          "Target": {
-			            "Entity": "city_metrics"
-			          }
-			        },
-			        "measure.briarport_value": {
-			          "Target": {
-			            "Entity": "measure.briarport_value"
-			          }
-			        }
-			      },
-			      "Phrasings": [
-			        {
-			          "Attribute": {
-			            "Subject": {
-			              "Role": "city_metrics"
-			            },
-			            "Object": {
-			              "Role": "measure.briarport_value"
-			            }
-			          },
-			          "State": "Generated",
-			          "Weight": 0.99,
-			          "ID": "city_metrics_have_briarport_value"
-			        }
-			      ]
-			    },
-			    "city_metrics_BP_all_region_has_year": {
-			      "Binding": {
-			        "ConceptualEntity": "City Metrics BP All Regions"
-			      },
-			      "State": "Generated",
-			      "Roles": {
-			        "city_metrics_BP_all_region": {
-			          "Target": {
-			            "Entity": "city_metrics_BP_all_region"
-			          }
-			        },
-			        "city_metrics_BP_all_region.year": {
-			          "Target": {
-			            "Entity": "city_metrics_BP_all_region.year"
-			          }
-			        }
-			      },
-			      "Phrasings": [
-			        {
-			          "Attribute": {
-			            "Subject": {
-			              "Role": "city_metrics_BP_all_region"
-			            },
-			            "Object": {
-			              "Role": "city_metrics_BP_all_region.year"
-			            }
-			          },
-			          "State": "Generated",
-			          "Weight": 0.99,
-			          "ID": "city_metrics_BP_all_regions_have_years"
-			        }
-			      ]
-			    },
-			    "city_metrics_BP_all_region_has_attribute": {
-			      "Binding": {
-			        "ConceptualEntity": "City Metrics BP All Regions"
-			      },
-			      "State": "Generated",
-			      "Roles": {
-			        "city_metrics_BP_all_region": {
-			          "Target": {
-			            "Entity": "city_metrics_BP_all_region"
-			          }
-			        },
-			        "city_metrics_BP_all_region.attribute": {
-			          "Target": {
-			            "Entity": "city_metrics_BP_all_region.attribute"
-			          }
-			        }
-			      },
-			      "Phrasings": [
-			        {
-			          "Attribute": {
-			            "Subject": {
-			              "Role": "city_metrics_BP_all_region"
-			            },
-			            "Object": {
-			              "Role": "city_metrics_BP_all_region.attribute"
-			            }
-			          },
-			          "State": "Generated",
-			          "Weight": 0.99,
-			          "ID": "city_metrics_BP_all_regions_have_attributes"
-			        }
-			      ]
-			    },
-			    "city_metrics_BP_all_region_has_value": {
-			      "Binding": {
-			        "ConceptualEntity": "City Metrics BP All Regions"
-			      },
-			      "State": "Generated",
-			      "Roles": {
-			        "city_metrics_BP_all_region": {
-			          "Target": {
-			            "Entity": "city_metrics_BP_all_region"
-			          }
-			        },
-			        "city_metrics_BP_all_region.value": {
-			          "Target": {
-			            "Entity": "city_metrics_BP_all_region.value"
-			          }
-			        }
-			      },
-			      "Phrasings": [
-			        {
-			          "Attribute": {
-			            "Subject": {
-			              "Role": "city_metrics_BP_all_region"
-			            },
-			            "Object": {
-			              "Role": "city_metrics_BP_all_region.value"
-			            }
-			          },
-			          "State": "Generated",
-			          "Weight": 0.99,
-			          "ID": "city_metrics_BP_all_regions_have_values"
-			        }
-			      ]
-			    },
-			    "city_metrics_BP_all_region_has_value_for_grouping": {
-			      "Binding": {
-			        "ConceptualEntity": "City Metrics BP All Regions"
-			      },
-			      "State": "Generated",
-			      "Roles": {
-			        "city_metrics_BP_all_region": {
-			          "Target": {
-			            "Entity": "city_metrics_BP_all_region"
-			          }
-			        },
-			        "city_metrics_BP_all_region.value_for_grouping": {
-			          "Target": {
-			            "Entity": "city_metrics_BP_all_region.value_for_grouping"
-			          }
-			        }
-			      },
-			      "Phrasings": [
-			        {
-			          "Attribute": {
-			            "Subject": {
-			              "Role": "city_metrics_BP_all_region"
-			            },
-			            "Object": {
-			              "Role": "city_metrics_BP_all_region.value_for_grouping"
-			            }
-			          },
-			          "State": "Generated",
-			          "Weight": 0.99,
-			          "ID": "city_metrics_BP_all_regions_have_value_for_grouping"
-			        }
-			      ]
-			    },
-			    "city_metrics_BP_all_region_has_rank": {
-			      "Binding": {
-			        "ConceptualEntity": "City Metrics BP All Regions"
-			      },
-			      "State": "Generated",
-			      "Roles": {
-			        "city_metrics_BP_all_region": {
-			          "Target": {
-			            "Entity": "city_metrics_BP_all_region"
-			          }
-			        },
-			        "city_metrics_BP_all_region.rank": {
-			          "Target": {
-			            "Entity": "city_metrics_BP_all_region.rank"
-			          }
-			        }
-			      },
-			      "Phrasings": [
-			        {
-			          "Attribute": {
-			            "Subject": {
-			              "Role": "city_metrics_BP_all_region"
-			            },
-			            "Object": {
-			              "Role": "city_metrics_BP_all_region.rank"
-			            }
-			          },
-			          "State": "Generated",
-			          "Weight": 0.99,
-			          "ID": "city_metrics_BP_all_regions_have_ranks"
-			        }
-			      ]
-			    },
-			    "city_metrics_BP_all_region_has_attribute_order": {
-			      "Binding": {
-			        "ConceptualEntity": "City Metrics BP All Regions"
-			      },
-			      "State": "Generated",
-			      "Roles": {
-			        "city_metrics_BP_all_region": {
-			          "Target": {
-			            "Entity": "city_metrics_BP_all_region"
-			          }
-			        },
-			        "city_metrics_BP_all_region.attribute_order": {
-			          "Target": {
-			            "Entity": "city_metrics_BP_all_region.attribute_order"
-			          }
-			        }
-			      },
-			      "Phrasings": [
-			        {
-			          "Attribute": {
-			            "Subject": {
-			              "Role": "city_metrics_BP_all_region"
-			            },
-			            "Object": {
-			              "Role": "city_metrics_BP_all_region.attribute_order"
-			            }
-			          },
-			          "State": "Generated",
-			          "Weight": 0.99,
-			          "ID": "city_metrics_BP_all_regions_have_attribute_orders"
-			        }
-			      ]
-			    },
-			    "city_metrics_BP_all_region_has_region": {
-			      "Binding": {
-			        "ConceptualEntity": "City Metrics BP All Regions"
-			      },
-			      "State": "Generated",
-			      "Roles": {
-			        "city_metrics_BP_all_region": {
-			          "Target": {
-			            "Entity": "city_metrics_BP_all_region"
-			          }
-			        },
-			        "city_metrics_BP_all_region.region": {
-			          "Target": {
-			            "Entity": "city_metrics_BP_all_region.region"
-			          }
-			        }
-			      },
-			      "Phrasings": [
-			        {
-			          "Attribute": {
-			            "Subject": {
-			              "Role": "city_metrics_BP_all_region"
-			            },
-			            "Object": {
-			              "Role": "city_metrics_BP_all_region.region"
-			            }
-			          },
-			          "State": "Generated",
-			          "Weight": 0.99,
-			          "ID": "city_metrics_BP_all_regions_have_regions"
-			        }
-			      ]
-			    },
-			    "city_metrics_BP_all_region_has_region_rank": {
-			      "Binding": {
-			        "ConceptualEntity": "City Metrics BP All Regions"
-			      },
-			      "State": "Generated",
-			      "Roles": {
-			        "city_metrics_BP_all_region": {
-			          "Target": {
-			            "Entity": "city_metrics_BP_all_region"
-			          }
-			        },
-			        "city_metrics_BP_all_region.region_rank": {
-			          "Target": {
-			            "Entity": "city_metrics_BP_all_region.region_rank"
-			          }
-			        }
-			      },
-			      "Phrasings": [
-			        {
-			          "Attribute": {
-			            "Subject": {
-			              "Role": "city_metrics_BP_all_region"
-			            },
-			            "Object": {
-			              "Role": "city_metrics_BP_all_region.region_rank"
-			            }
-			          },
-			          "State": "Generated",
-			          "Weight": 0.99,
-			          "ID": "city_metrics_BP_all_regions_have_region_ranks"
+			          "ID": "region_ranking_have_final_ranking"
 			        }
 			      ]
 			    },
@@ -5041,7 +8633,53 @@ cultureInfo en-US
 			        }
 			      ]
 			    },
-			    "city_metrics_BP_all_region_has_city_lookup": {
+			    "city_metrics_has_metric_renaming": {
+			      "Binding": {
+			        "ConceptualEntity": "City Metrics"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "city_metrics": {
+			          "Target": {
+			            "Entity": "city_metrics"
+			          }
+			        },
+			        "metric_renaming": {
+			          "Target": {
+			            "Entity": "metric_renaming"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "city_metrics"
+			            },
+			            "Object": {
+			              "Role": "metric_renaming"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "city_metrics_have_metric_renaming"
+			        },
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "metric_renaming"
+			            },
+			            "Object": {
+			              "Role": "city_metrics"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "metric_renaming_have_city_metrics"
+			        }
+			      ]
+			    },
+			    "city_metrics_BP_all_region_has_metric_renaming": {
 			      "Binding": {
 			        "ConceptualEntity": "City Metrics BP All Regions"
 			      },
@@ -5052,9 +8690,9 @@ cultureInfo en-US
 			            "Entity": "city_metrics_BP_all_region"
 			          }
 			        },
-			        "city_lookup": {
+			        "metric_renaming": {
 			          "Target": {
-			            "Entity": "city_lookup"
+			            "Entity": "metric_renaming"
 			          }
 			        }
 			      },
@@ -5065,17 +8703,17 @@ cultureInfo en-US
 			              "Role": "city_metrics_BP_all_region"
 			            },
 			            "Object": {
-			              "Role": "city_lookup"
+			              "Role": "metric_renaming"
 			            }
 			          },
 			          "State": "Generated",
 			          "Weight": 0.99,
-			          "ID": "city_metrics_BP_all_regions_have_city_lookups"
+			          "ID": "city_metrics_BP_all_regions_have_metric_renaming"
 			        },
 			        {
 			          "Attribute": {
 			            "Subject": {
-			              "Role": "city_lookup"
+			              "Role": "metric_renaming"
 			            },
 			            "Object": {
 			              "Role": "city_metrics_BP_all_region"
@@ -5083,7 +8721,7 @@ cultureInfo en-US
 			          },
 			          "State": "Generated",
 			          "Weight": 0.99,
-			          "ID": "city_lookups_have_city_metrics_BP_all_regions"
+			          "ID": "metric_renaming_have_city_metrics_BP_all_regions"
 			        }
 			      ]
 			    }

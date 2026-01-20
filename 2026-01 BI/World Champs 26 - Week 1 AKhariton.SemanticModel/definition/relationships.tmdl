@@ -2,7 +2,11 @@ relationship AutoDetected_0443f1e1-102b-4000-94e3-dc5cafef9318
 	fromColumn: 'City Metrics'.City
 	toColumn: 'City Lookup'.City
 
-relationship AutoDetected_954d4b7d-f2f6-405b-98f7-64a9ef6a9451
-	fromColumn: 'City Metrics BP All Regions'.City
-	toColumn: 'City Lookup'.City
+relationship 14c87ac1-315c-db69-5f46-c212d31715f8
+	fromColumn: 'City Metrics'.Attribute
+	toColumn: 'Metric Renaming'.Attribute
+
+relationship c6d39d0f-6439-d2f6-d1a1-43f37a7d6f50
+	fromColumn: 'City Metrics BP All Regions'.Attribute
+	toColumn: 'Metric Renaming'.Attribute
 

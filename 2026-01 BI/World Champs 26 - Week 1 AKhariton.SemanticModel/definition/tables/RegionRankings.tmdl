@@ -1,0 +1,63 @@
+table RegionRankings
+	lineageTag: 612c561e-3362-4b23-b655-07613f3bfbd2
+
+	column Average
+		lineageTag: 3436b0df-9f8d-456d-819e-df32a79ff843
+		summarizeBy: sum
+		isNameInferred
+		sourceColumn: [Average]
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column Rank
+		formatString: 0
+		lineageTag: 7cad4c59-dda1-495c-8b1f-af23959440f5
+		summarizeBy: sum
+		isNameInferred
+		sourceColumn: [Rank]
+
+		annotation SummarizationSetBy = Automatic
+
+	column Region
+		lineageTag: efcabfb5-6ba7-4506-b360-867329e9e716
+		summarizeBy: none
+		isNameInferred
+		sourceColumn: City Metrics[Region]
+
+		annotation SummarizationSetBy = Automatic
+
+	column Attribute
+		lineageTag: 1a12053b-2f62-43ea-ba07-0b6db3e9f7af
+		summarizeBy: none
+		isNameInferred
+		sourceColumn: City Metrics[Attribute]
+
+		annotation SummarizationSetBy = Automatic
+
+	column FinalRanking =
+			
+			SWITCH(TRUE(),
+			        'RegionRankings'[Attribute]<>"Emissions Index" && 'RegionRankings'[Attribute]<>"Housing Affordability Index",'RegionRankings'[Rank],
+			        'RegionRankings'[Rank]=4,1,
+			        'RegionRankings'[Rank]=1,4,
+			        'RegionRankings'[Rank]=2,3,
+			        2
+			)
+		formatString: 0
+		lineageTag: 950f3132-eaec-48c0-9776-acee08df29da
+		summarizeBy: sum
+
+		annotation SummarizationSetBy = Automatic
+
+	partition RegionRankings = calculated
+		mode: import
+		source =
+				
+				var _table = SUMMARIZE(FILTER('City Metrics','City Metrics'[Year]=2024),'City Metrics'[Region],'City Metrics'[Attribute],"Average",average('City Metrics'[Value]))
+				var _table2 = ADDCOLUMNS(_table,"Rank",rank(DENSE,_table,ORDERBY('City Metrics'[Attribute],ASC,[Average],DESC),,PARTITIONBY('City Metrics'[Attribute])))
+				RETURN _table2
+
+	annotation PBI_Id = 69c25054b3b846488783390af4a865f0
+

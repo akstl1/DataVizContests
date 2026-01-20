@@ -2,37 +2,18 @@
   "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/visualContainer/2.4.0/schema.json",
   "name": "ddb1ee629659b816234c",
   "position": {
-    "x": 161.37931034482759,
-    "y": 210.14778325123152,
-    "z": 7000,
-    "height": 261.57635467980293,
-    "width": 730.64039408867,
+    "x": 168.4729064039409,
+    "y": 150.85221674876848,
+    "z": 8000,
+    "height": 205.71428571428572,
+    "width": 716.45320197044339,
     "tabOrder": 4000
   },
   "visual": {
-    "visualType": "lineChart",
+    "visualType": "columnChart",
     "query": {
       "queryState": {
         "Category": {
-          "projections": [
-            {
-              "field": {
-                "Column": {
-                  "Expression": {
-                    "SourceRef": {
-                      "Entity": "City Metrics"
-                    }
-                  },
-                  "Property": "Year"
-                }
-              },
-              "queryRef": "City Metrics.Year",
-              "nativeQueryRef": "Year",
-              "active": true
-            }
-          ]
-        },
-        "Series": {
           "projections": [
             {
               "field": {
@@ -46,7 +27,8 @@
                 }
               },
               "queryRef": "City Metrics.City",
-              "nativeQueryRef": "City"
+              "nativeQueryRef": "City",
+              "active": true
             }
           ]
         },
@@ -66,22 +48,6 @@
               "queryRef": "*Measures.Value",
               "nativeQueryRef": "Value",
               "displayName": "Value"
-            }
-          ],
-          "fieldParameters": [
-            {
-              "parameterExpr": {
-                "Column": {
-                  "Expression": {
-                    "SourceRef": {
-                      "Entity": "Parameter"
-                    }
-                  },
-                  "Property": "Parameter"
-                }
-              },
-              "index": 0,
-              "length": 1
             }
           ]
         }
@@ -583,56 +549,43 @@
           }
         }
       ],
-      "lineStyles": [
+      "categoryAxis": [
         {
           "properties": {
-            "showMarker": {
+            "showAxisTitle": {
+              "expr": {
+                "Literal": {
+                  "Value": "false"
+                }
+              }
+            },
+            "gridlineShow": {
               "expr": {
                 "Literal": {
                   "Value": "true"
                 }
               }
-            },
-            "markerSize": {
+            }
+          }
+        }
+      ],
+      "valueAxis": [
+        {
+          "properties": {
+            "showAxisTitle": {
               "expr": {
                 "Literal": {
-                  "Value": "5D"
+                  "Value": "false"
                 }
               }
             },
-            "markerShape": {
+            "gridlineShow": {
               "expr": {
                 "Literal": {
-                  "Value": "'diamond'"
+                  "Value": "false"
                 }
               }
             }
-          },
-          "selector": {
-            "data": [
-              {
-                "scopeId": {
-                  "Comparison": {
-                    "ComparisonKind": 0,
-                    "Left": {
-                      "Column": {
-                        "Expression": {
-                          "SourceRef": {
-                            "Entity": "City Metrics"
-                          }
-                        },
-                        "Property": "City"
-                      }
-                    },
-                    "Right": {
-                      "Literal": {
-                        "Value": "'Briarport'"
-                      }
-                    }
-                  }
-                }
-              }
-            ]
           }
         }
       ]
@@ -644,7 +597,14 @@
             "text": {
               "expr": {
                 "Literal": {
-                  "Value": "'Transit'"
+                  "Value": "'Value Chart'"
+                }
+              }
+            },
+            "show": {
+              "expr": {
+                "Literal": {
+                  "Value": "false"
                 }
               }
             }
@@ -676,7 +636,20 @@
             "radius": {
               "expr": {
                 "Literal": {
-                  "Value": "10D"
+                  "Value": "0D"
+                }
+              }
+            }
+          }
+        }
+      ],
+      "general": [
+        {
+          "properties": {
+            "altText": {
+              "expr": {
+                "Literal": {
+                  "Value": "'This is a bar chart, with spotlight on Briarport, showing 2024 performance for the selected metric.'"
                 }
               }
             }
@@ -704,7 +677,7 @@
         "howCreated": "User"
       },
       {
-        "name": "61b0bdd8759840077490",
+        "name": "9d302c6416b631d8014a",
         "field": {
           "Column": {
             "Expression": {
@@ -715,10 +688,50 @@
             "Property": "Year"
           }
         },
-        "type": "Advanced"
+        "type": "Categorical",
+        "filter": {
+          "Version": 2,
+          "From": [
+            {
+              "Name": "c",
+              "Entity": "City Metrics",
+              "Type": 0
+            }
+          ],
+          "Where": [
+            {
+              "Condition": {
+                "In": {
+                  "Expressions": [
+                    {
+                      "Column": {
+                        "Expression": {
+                          "SourceRef": {
+                            "Source": "c"
+                          }
+                        },
+                        "Property": "Year"
+                      }
+                    }
+                  ],
+                  "Values": [
+                    [
+                      {
+                        "Literal": {
+                          "Value": "2024L"
+                        }
+                      }
+                    ]
+                  ]
+                }
+              }
+            }
+          ]
+        },
+        "howCreated": "User"
       },
       {
-        "name": "61142a250674b0cb9015",
+        "name": "e0aed0968db0ac400040",
         "field": {
           "Column": {
             "Expression": {
@@ -730,6 +743,20 @@
           }
         },
         "type": "Categorical"
+      },
+      {
+        "name": "ee1f579b1992ae244d2c",
+        "field": {
+          "Measure": {
+            "Expression": {
+              "SourceRef": {
+                "Entity": "*Measures"
+              }
+            },
+            "Property": "Value"
+          }
+        },
+        "type": "Advanced"
       }
     ]
   }

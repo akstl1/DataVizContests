@@ -3,11 +3,11 @@
   "name": "854b7989140a748271a2",
   "position": {
     "x": 161.37931034482759,
-    "y": 477.93103448275861,
-    "z": 11004,
-    "height": 233.20197044334975,
+    "y": 371.64039408866989,
+    "z": 4000,
+    "height": 326.30541871921184,
     "width": 730.64039408867,
-    "tabOrder": 10007
+    "tabOrder": 1000
   },
   "visual": {
     "visualType": "columnChart",
@@ -42,11 +42,11 @@
                       "Entity": "*Measures"
                     }
                   },
-                  "Property": "Ten Year Difference"
+                  "Property": "Ten Year Difference Bar Chart"
                 }
               },
-              "queryRef": "*Measures.Ten Year Difference",
-              "nativeQueryRef": "Ten Year Difference"
+              "queryRef": "*Measures.Ten Year Difference Bar Chart",
+              "nativeQueryRef": "Ten Year Difference Bar Chart"
             }
           ]
         }
@@ -61,7 +61,7 @@
                     "Entity": "*Measures"
                   }
                 },
-                "Property": "Ten Year Difference"
+                "Property": "Ten Year Difference Bar Chart"
               }
             },
             "direction": "Descending"
@@ -101,6 +101,38 @@
                   }
                 }
               }
+            },
+            "borderShow": {
+              "expr": {
+                "Literal": {
+                  "Value": "false"
+                }
+              }
+            },
+            "borderSize": {
+              "expr": {
+                "Literal": {
+                  "Value": "3D"
+                }
+              }
+            },
+            "borderColor": {
+              "solid": {
+                "color": {
+                  "expr": {
+                    "Literal": {
+                      "Value": "'#2C73B3'"
+                    }
+                  }
+                }
+              }
+            },
+            "fillTransparency": {
+              "expr": {
+                "Literal": {
+                  "Value": "0D"
+                }
+              }
             }
           },
           "selector": {
@@ -128,6 +160,32 @@
                 }
               }
             ]
+          }
+        }
+      ],
+      "valueAxis": [
+        {
+          "properties": {
+            "showAxisTitle": {
+              "expr": {
+                "Literal": {
+                  "Value": "false"
+                }
+              }
+            }
+          }
+        }
+      ],
+      "categoryAxis": [
+        {
+          "properties": {
+            "showAxisTitle": {
+              "expr": {
+                "Literal": {
+                  "Value": "false"
+                }
+              }
+            }
           }
         }
       ]
@@ -164,6 +222,44 @@
             }
           }
         }
+      ],
+      "title": [
+        {
+          "properties": {
+            "text": {
+              "expr": {
+                "Measure": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "*Measures"
+                    }
+                  },
+                  "Property": "Ten Year Difference Header"
+                }
+              }
+            },
+            "alignment": {
+              "expr": {
+                "Literal": {
+                  "Value": "'center'"
+                }
+              }
+            }
+          }
+        }
+      ],
+      "general": [
+        {
+          "properties": {
+            "altText": {
+              "expr": {
+                "Literal": {
+                  "Value": "'This bar chart shows the variance of 2015 to 2024 performance values.'"
+                }
+              }
+            }
+          }
+        }
       ]
     },
     "drillFilterOtherVisuals": true
@@ -171,7 +267,7 @@
   "filterConfig": {
     "filters": [
       {
-        "name": "551b0f9e84dd87dc1e43",
+        "name": "5716e788acc0be4adc57",
         "field": {
           "Column": {
             "Expression": {
@@ -185,7 +281,7 @@
         "type": "Categorical"
       },
       {
-        "name": "4dd177ca066a4c41d9a2",
+        "name": "7ba608b7808761c2d79c",
         "field": {
           "Measure": {
             "Expression": {
@@ -193,7 +289,7 @@
                 "Entity": "*Measures"
               }
             },
-            "Property": "Ten Year Difference"
+            "Property": "Ten Year Difference Bar Chart"
           }
         },
         "type": "Advanced"
